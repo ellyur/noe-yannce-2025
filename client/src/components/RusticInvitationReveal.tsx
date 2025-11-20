@@ -71,8 +71,12 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             <div className="flex justify-center">
               <div className="relative w-20 h-20">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 animate-pulse" />
-                <div className="relative w-full h-full rounded-full bg-white border-2 border-primary/20 flex items-center justify-center">
-                  <Heart className="w-8 h-8 text-primary fill-primary" />
+                <div className="relative w-full h-full rounded-full bg-white border-2 border-primary/20 flex items-center justify-center overflow-hidden p-2">
+                  <img 
+                    src="https://res.cloudinary.com/dldegdz30/image/upload/v1763614930/c2b6e25c-4190-4419-baef-1fae4b6fff78-removebg-preview_wpq7bv.png"
+                    alt="Heart"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -115,14 +119,28 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
 
             {/* Modern Hearts decoration */}
             <div className="flex items-center justify-center gap-3 pt-6">
-              <div className="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center">
-                <Heart className="w-4 h-4 text-primary fill-primary animate-pulse" />
+              <div className="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center overflow-hidden p-1">
+                <img 
+                  src="https://res.cloudinary.com/dldegdz30/image/upload/v1763614930/c2b6e25c-4190-4419-baef-1fae4b6fff78-removebg-preview_wpq7bv.png"
+                  alt="Heart"
+                  className="w-full h-full object-contain animate-pulse"
+                />
               </div>
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Heart className="w-5 h-5 text-primary fill-primary animate-pulse" style={{ animationDelay: '0.5s' }} />
+              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden p-1">
+                <img 
+                  src="https://res.cloudinary.com/dldegdz30/image/upload/v1763614930/c2b6e25c-4190-4419-baef-1fae4b6fff78-removebg-preview_wpq7bv.png"
+                  alt="Heart"
+                  className="w-full h-full object-contain animate-pulse"
+                  style={{ animationDelay: '0.5s' }}
+                />
               </div>
-              <div className="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center">
-                <Heart className="w-4 h-4 text-primary fill-primary animate-pulse" style={{ animationDelay: '1s' }} />
+              <div className="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center overflow-hidden p-1">
+                <img 
+                  src="https://res.cloudinary.com/dldegdz30/image/upload/v1763614930/c2b6e25c-4190-4419-baef-1fae4b6fff78-removebg-preview_wpq7bv.png"
+                  alt="Heart"
+                  className="w-full h-full object-contain animate-pulse"
+                  style={{ animationDelay: '1s' }}
+                />
               </div>
             </div>
           </div>
