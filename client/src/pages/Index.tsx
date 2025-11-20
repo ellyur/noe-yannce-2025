@@ -17,6 +17,7 @@ import CoverSection from '@/components/CoverSection';
 import InvitationRevealSection from '@/components/InvitationRevealSection';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
 import { AnimationContext } from '@/contexts/AnimationContext';
+import CoverImage from '@/components/CoverImage';
 
 // Cover media
 const cover1Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566013/cover1_emzxqg.jpg';
@@ -33,7 +34,7 @@ const Index = () => {
   const handleMusicConsent = async (consent: boolean) => {
     setShowMusicConsent(false);
     setAnimationsEnabled(true);
-    
+
     if (consent && audioRef.current) {
       try {
         await audioRef.current.play();
@@ -54,9 +55,9 @@ const Index = () => {
         src="https://res.cloudinary.com/dnokhmes0/video/upload/v1762595790/ytmp3free.cc_rico-blanco-balisong-transformed-2016-youtubemp3free.org_w6epbo.mp3"
       />
 
-      <MusicConsentPopup 
-        onConsent={handleMusicConsent} 
-        isVisible={showMusicConsent} 
+      <MusicConsentPopup
+        onConsent={handleMusicConsent}
+        isVisible={showMusicConsent}
       />
 
       <div className="min-h-screen relative">
@@ -64,40 +65,45 @@ const Index = () => {
 
         <main className="relative z-10 space-y-0">
           <HeroSection audioRef={audioRef} />
-        <InvitationRevealSection />
-        <RSVPSection />
-        <CountdownSection />
-        <ImageLoop />
-        <StorySection />
-        <ScrollTriggeredTimeline />
-        <CoverSection
-          imageUrl={cover4Image}
-          alt="Noe & Yannce Wedding Cover 4"
-        />
-        <VenueSection />
-        <CoverSection
-          imageUrl={cover2Image}
-          alt="Noe & Yannce Wedding Cover 2"
-        />
-        <DressCodeSection />
-        <MemorableMomentsSection />
-        <CoverSection
-          imageUrl={cover1Image}
-          alt="Noe & Yannce Wedding Cover 1"
-        />
-        <EntourageSection />
-        <CoverSection
-          imageUrl={cover3Image}
-          alt="Noe & Yannce Wedding Cover 3"
-        />
-        <FAQSection />
-        <CoverSection
-          imageUrl={cover5Image}
-          alt="Noe & Yannce Wedding Cover 5"
-        />
-        <Footer />
-      </main>
-    </div>
+          <InvitationRevealSection />
+          <RSVPSection />
+          <CountdownSection />
+          <ImageLoop />
+          <StorySection />
+          <ScrollTriggeredTimeline />
+          <CoverImage
+            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648836/5c3e35c1-0656-4ea1-a1f1-fe2bbc60d5c1_py2mi9.jpg"
+            alt="Timeline Cover"
+            delay={5.5}
+          />
+          <VenueSection />
+          <CoverImage
+            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648835/2c92ea32-c6eb-4bca-9735-94d09029ea31_nzwmvr.jpg"
+            alt="Venue Cover"
+            delay={7.5}
+          />
+          <DressCodeSection />
+          <CoverImage
+            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/7b85c12e-3667-45f9-a62e-2f11100d4448_bkz9f0.jpg"
+            alt="Dress Code Cover"
+            delay={9.5}
+          />
+          <EntourageSection />
+          <CoverImage
+            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/593a4f25-5c82-48af-b512-6535ba932e26_qtu8ei.jpg"
+            alt="Entourage Cover"
+            delay={10.5}
+          />
+          <FAQSection />
+          <CoverImage
+            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648825/6623a334-1dbd-4c10-af62-d7718c9efad0_tc0zqg.jpg"
+            alt="FAQ Cover"
+            delay={12.5}
+          />
+          <MemorableMomentsSection />
+          <Footer />
+        </main>
+      </div>
     </AnimationContext.Provider>
   );
 };
