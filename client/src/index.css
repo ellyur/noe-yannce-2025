@@ -6,90 +6,90 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Minimalist Love Theme */
+/* Winter Blue Theme */
 
 @layer base {
   :root {
-    /* Modern White Theme with Teal Shadows & Olive Green Text */
+    /* Winter Blue Theme with White Text & Snowfall */
     
-    /* PRIMARY - Clean White Background */
-    --background: 0 0% 100%; /* Pure white background */
-    --foreground: 75 30% 25%; /* Dark olive green text */
+    /* PRIMARY - Deep Winter Blue Background */
+    --background: 210 65% 15%; /* Deep winter blue background */
+    --foreground: 0 0% 100%; /* Pure white text */
 
-    /* Card Colors - White with Shadow */
-    --card: 0 0% 100%; /* Pure white cards */
-    --card-foreground: 75 30% 25%; /* Dark olive green text */
+    /* Card Colors - Lighter Blue with Transparency */
+    --card: 210 55% 22%; /* Lighter blue cards */
+    --card-foreground: 0 0% 100%; /* White text */
 
     /* Popover Colors */
-    --popover: 0 0% 100%; /* White popover */
-    --popover-foreground: 75 30% 25%; /* Dark olive green text */
+    --popover: 210 60% 18%; /* Medium blue popover */
+    --popover-foreground: 0 0% 100%; /* White text */
 
     /* Brand Color */
-    --brand: 75 28% 30%; /* Olive green brand color */
+    --brand: 200 80% 60%; /* Bright icy blue brand color */
     
-    /* SECONDARY - Dark Olive Green Accents */
-    --primary: 75 28% 30%; /* Olive green primary */
-    --primary-foreground: 0 0% 100%; /* White text on dark */
+    /* SECONDARY - Bright Ice Blue Accents */
+    --primary: 200 80% 60%; /* Bright icy blue primary */
+    --primary-foreground: 210 65% 15%; /* Dark blue text on light */
 
     /* Secondary Colors */
-    --secondary: 75 20% 88%; /* Light olive green secondary */
-    --secondary-foreground: 75 30% 25%; /* Dark olive green text */
+    --secondary: 210 50% 30%; /* Medium blue secondary */
+    --secondary-foreground: 0 0% 100%; /* White text */
 
     /* Muted Colors */
-    --muted: 75 20% 88%; /* Light olive green muted */
-    --muted-foreground: 75 25% 40%; /* Medium olive green text */
+    --muted: 210 45% 25%; /* Muted blue */
+    --muted-foreground: 200 20% 80%; /* Light blue-white text */
 
-    /* ACCENT - Olive Green Accent */
-    --accent: 75 20% 88%; /* Light olive green accent */
-    --accent-foreground: 75 30% 25%; /* Dark olive green text */
+    /* ACCENT - Light Ice Blue Accent */
+    --accent: 210 50% 30%; /* Medium blue accent */
+    --accent-foreground: 0 0% 100%; /* White text */
 
     /* Special Accent - for CTAs and highlights */
-    --gold: 75 35% 50%; /* Medium olive green for emphasis */
-    --gold-foreground: 0 0% 100%; /* White text on dark */
+    --gold: 200 80% 60%; /* Bright ice blue for emphasis */
+    --gold-foreground: 210 65% 15%; /* Dark blue text */
     
     /* Bright Accent - for emphasis */
-    --gold-bright: 75 28% 30%; /* Olive green for emphasis */
+    --gold-bright: 190 85% 65%; /* Lighter ice blue for emphasis */
     
-    /* Dark Green Accent - for timeline icons */
-    --teal: 75 35% 35%; /* Dark olive green accent color */
-    --teal-foreground: 0 0% 100%; /* White text on dark green */
+    /* Dark Blue Accent - for timeline icons */
+    --teal: 200 70% 50%; /* Medium ice blue accent color */
+    --teal-foreground: 0 0% 100%; /* White text on blue */
 
-    /* Aesthetic Palette - Modern grays */
-    --rose-gold: 0 0% 96%; /* Light gray */
-    --rose-gold-dark: 0 0% 90%; /* Slightly darker gray */
-    --amber-glow: 0 0% 85%; /* Medium gray */
-    --warm-light: 0 0% 98%; /* Very light gray */
+    /* Aesthetic Palette - Winter blues */
+    --rose-gold: 210 40% 35%; /* Light winter blue */
+    --rose-gold-dark: 210 45% 28%; /* Medium winter blue */
+    --amber-glow: 200 50% 50%; /* Bright ice glow */
+    --warm-light: 210 50% 40%; /* Lighter blue */
 
-    /* Natural Accents Palette - Gray tones */
-    --city-blue: 0 0% 40%; /* Medium gray accent */
-    --city-cyan: 0 0% 35%; /* Darker gray accent */
-    --city-amber: 0 0% 30%; /* Deep gray */
-    --city-purple: 0 0% 25%; /* Very dark gray */
+    /* Natural Accents Palette - Blue tones */
+    --city-blue: 200 60% 50%; /* Bright blue accent */
+    --city-cyan: 190 70% 55%; /* Cyan accent */
+    --city-amber: 200 80% 60%; /* Ice blue */
+    --city-purple: 220 40% 40%; /* Deep blue-purple */
 
     /* Destructive */
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 0 0% 90%; /* Light gray border */
-    --input: 0 0% 100%; /* White input */
-    --ring: 0 0% 20%; /* #333333 accent ring */
+    --border: 210 40% 35%; /* Medium blue border */
+    --input: 210 55% 20%; /* Dark blue input */
+    --ring: 200 80% 60%; /* Bright ice blue accent ring */
 
     /* Border Radius */
     --radius: 0.75rem;
 
-    /* Modern Gradients */
-    --gradient-elegant: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
-    --gradient-gold: linear-gradient(135deg, hsl(0, 0%, 20%), hsl(0, 0%, 30%));
-    --gradient-night: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 98%) 100%);
-    --gradient-bokeh: radial-gradient(ellipse at center, hsl(0, 0%, 20%) 0%, transparent 60%);
+    /* Winter Gradients */
+    --gradient-elegant: linear-gradient(135deg, hsl(210, 65%, 15%), hsl(210, 60%, 20%));
+    --gradient-gold: linear-gradient(135deg, hsl(200, 70%, 40%), hsl(190, 80%, 50%));
+    --gradient-night: linear-gradient(180deg, hsl(210, 65%, 12%) 0%, hsl(210, 60%, 18%) 100%);
+    --gradient-bokeh: radial-gradient(ellipse at center, hsl(200, 80%, 60%) 0%, transparent 60%);
 
-    /* Modern Clean Shadows */
-    --shadow-elegant: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
-    --shadow-soft: 0 4px 20px -4px rgba(0, 0, 0, 0.1);
-    --shadow-warm: 0 8px 30px -8px rgba(0, 0, 0, 0.12);
-    --shadow-glow: 0 0 30px rgba(0, 0, 0, 0.08);
-    --shadow-teal: 0 25px 60px -20px hsla(75, 35%, 25%, 0.35);
+    /* Winter Glow Shadows */
+    --shadow-elegant: 0 10px 40px -10px rgba(100, 200, 255, 0.3);
+    --shadow-soft: 0 4px 20px -4px rgba(100, 200, 255, 0.2);
+    --shadow-warm: 0 8px 30px -8px rgba(100, 200, 255, 0.25);
+    --shadow-glow: 0 0 30px rgba(100, 200, 255, 0.15);
+    --shadow-teal: 0 25px 60px -20px hsla(200, 80%, 60%, 0.4);
 
     /* Elegant Typography Scale */
     --font-display: 'Boska', 'Cormorant Garamond', serif; /* Headers - Boska 700 */
@@ -101,14 +101,14 @@
     --transition-elegant: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 0 0% 20%;
-    --sidebar-primary: 0 0% 20%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 96%;
-    --sidebar-accent-foreground: 0 0% 20%;
-    --sidebar-border: 0 0% 90%;
-    --sidebar-ring: 0 0% 20%;
+    --sidebar-background: 210 60% 18%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 200 80% 60%;
+    --sidebar-primary-foreground: 210 65% 15%;
+    --sidebar-accent: 210 50% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 40% 30%;
+    --sidebar-ring: 200 80% 60%;
   }
 
   /* Custom Wedding Animations */
@@ -198,6 +198,50 @@
       opacity: 0.8;
     }
   }
+
+  /* Snowfall Animations */
+  @keyframes snowfall {
+    0% {
+      transform: translateY(-10vh) translateX(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) translateX(100px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes snowfallLeft {
+    0% {
+      transform: translateY(-10vh) translateX(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) translateX(-100px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes snowfallSway {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+  }
 }
 
 /* Responsive clip-path variables for story images */
@@ -224,34 +268,34 @@
   body {
     @apply text-foreground font-body;
     font-family: var(--font-body);
-    background: #ffffff;
+    background: hsl(var(--background));
     position: relative;
     min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
   }
 
-  /* Texture Layer - 5% opacity for subtle texture effect */
+  /* Winter Snowflake Background */
   body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1601325059290-eac581b71510?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1483664852095-d6cc6870702d?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
-    opacity: 0.05;
+    opacity: 0.08;
     z-index: -1;
     pointer-events: none;
   }
 
-  /* Gradient Overlays - Subtle Modern */
+  /* Winter Gradient Overlays */
   body::after {
     content: "";
     position: fixed;
     inset: 0;
     background: 
-      radial-gradient(circle at top left, rgba(0,0,0,0.02) 0%, transparent 60%),
-      radial-gradient(circle at bottom right, rgba(0,0,0,0.02) 0%, transparent 60%);
+      radial-gradient(circle at top left, rgba(100, 200, 255, 0.08) 0%, transparent 60%),
+      radial-gradient(circle at bottom right, rgba(100, 200, 255, 0.08) 0%, transparent 60%);
     z-index: 0;
     pointer-events: none;
   }
@@ -421,14 +465,59 @@
     background: transparent;
   }
 
-  /* Glass Morphism Effect - Modern White */
+  /* Glass Morphism Effect - Winter Blue */
   .glass-effect {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(30, 60, 90, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(100, 200, 255, 0.2);
+    box-shadow: 0 4px 20px -4px rgba(100, 200, 255, 0.3);
   }
+
+  /* Snowfall Container */
+  .snowfall-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    font-size: 1em;
+    user-select: none;
+    pointer-events: none;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  /* Snowflake variations */
+  .snowflake:nth-child(1) { left: 5%; animation: snowfall 12s; font-size: 0.8em; animation-delay: 0s; }
+  .snowflake:nth-child(2) { left: 15%; animation: snowfallLeft 14s; font-size: 1.2em; animation-delay: 2s; }
+  .snowflake:nth-child(3) { left: 25%; animation: snowfall 16s; font-size: 0.6em; animation-delay: 4s; }
+  .snowflake:nth-child(4) { left: 35%; animation: snowfallLeft 13s; font-size: 1em; animation-delay: 1s; }
+  .snowflake:nth-child(5) { left: 45%; animation: snowfall 15s; font-size: 0.9em; animation-delay: 3s; }
+  .snowflake:nth-child(6) { left: 55%; animation: snowfallLeft 17s; font-size: 1.1em; animation-delay: 5s; }
+  .snowflake:nth-child(7) { left: 65%; animation: snowfall 14s; font-size: 0.7em; animation-delay: 2s; }
+  .snowflake:nth-child(8) { left: 75%; animation: snowfallLeft 16s; font-size: 1.3em; animation-delay: 4s; }
+  .snowflake:nth-child(9) { left: 85%; animation: snowfall 13s; font-size: 0.9em; animation-delay: 1s; }
+  .snowflake:nth-child(10) { left: 95%; animation: snowfallLeft 15s; font-size: 1em; animation-delay: 3s; }
+  .snowflake:nth-child(11) { left: 10%; animation: snowfall 18s; font-size: 0.8em; animation-delay: 6s; }
+  .snowflake:nth-child(12) { left: 20%; animation: snowfallLeft 12s; font-size: 1.2em; animation-delay: 0s; }
+  .snowflake:nth-child(13) { left: 30%; animation: snowfall 14s; font-size: 0.6em; animation-delay: 2s; }
+  .snowflake:nth-child(14) { left: 40%; animation: snowfallLeft 16s; font-size: 1em; animation-delay: 4s; }
+  .snowflake:nth-child(15) { left: 50%; animation: snowfall 13s; font-size: 0.9em; animation-delay: 1s; }
+  .snowflake:nth-child(16) { left: 60%; animation: snowfallLeft 17s; font-size: 1.1em; animation-delay: 5s; }
+  .snowflake:nth-child(17) { left: 70%; animation: snowfall 15s; font-size: 0.7em; animation-delay: 3s; }
+  .snowflake:nth-child(18) { left: 80%; animation: snowfallLeft 14s; font-size: 1.3em; animation-delay: 2s; }
+  .snowflake:nth-child(19) { left: 90%; animation: snowfall 16s; font-size: 0.9em; animation-delay: 4s; }
+  .snowflake:nth-child(20) { left: 2%; animation: snowfallLeft 13s; font-size: 1em; animation-delay: 1s; }
 
   /* Clean Mobile Styles */
   @media (max-width: 768px) {
@@ -659,10 +748,10 @@
     animation-play-state: paused;
   }
 
-  /* Alternating Section Backgrounds - Minimalist Theme */
+  /* Alternating Section Backgrounds - Winter Theme */
   .section-pastel-blue {
-    background-color: transparent;
-    color: hsl(0, 0%, 10%);
+    background-color: hsla(210, 60%, 18%, 0.5);
+    color: hsl(0, 0%, 100%);
     position: relative;
     overflow: hidden;
   }
@@ -673,8 +762,8 @@
   }
 
   .section-hard-blue {
-    background: transparent;
-    color: hsl(0, 0%, 10%);
+    background: hsla(210, 55%, 22%, 0.5);
+    color: hsl(0, 0%, 100%);
     position: relative;
     overflow: hidden;
   }
