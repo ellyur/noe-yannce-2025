@@ -41,25 +41,25 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
           
           {/* Decorative Flowers on Edges */}
           <img 
-            src={flower1Image} 
+            src="https://res.cloudinary.com/dldegdz30/image/upload/v1763614930/6d5dbc7b-bfc1-4bfc-81d4-581d000f204f-removebg-preview_tatgdf.png"
             alt="" 
             className="absolute top-4 left-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float pointer-events-none"
             data-testid="decoration-flower-invitation-topleft"
           />
           <img 
-            src={flowerImage} 
+            src="https://res.cloudinary.com/dldegdz30/image/upload/v1763614930/image-removebg-preview_1_scnyns.png"
             alt="" 
             className="absolute top-4 right-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float-delayed pointer-events-none"
             data-testid="decoration-flower-invitation-topright"
           />
           <img 
-            src={flower1Image} 
+            src="https://res.cloudinary.com/dldegdz30/image/upload/v1763614930/image-removebg-preview_1_scnyns.png"
             alt="" 
             className="absolute bottom-4 left-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float-delayed pointer-events-none transform rotate-45"
             data-testid="decoration-flower-invitation-bottomleft"
           />
           <img 
-            src={flowerImage} 
+            src="https://res.cloudinary.com/dldegdz30/image/upload/v1763614930/6d5dbc7b-bfc1-4bfc-81d4-581d000f204f-removebg-preview_tatgdf.png"
             alt="" 
             className="absolute bottom-4 right-4 w-12 h-12 md:w-16 md:h-16 object-contain opacity-60 animate-float pointer-events-none transform -rotate-12"
             data-testid="decoration-flower-invitation-bottomright"
