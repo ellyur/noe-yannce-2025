@@ -7,10 +7,10 @@ import guestsImage from '@assets/guesttt_1762593761188.png';
 
 const DressCodeSection = () => {
   const dressCodeColors = [
-    { name: 'Dark Olive', color: '#3C3D2E', hex: '#3C3D2E' },
-    { name: 'Olive Green', color: '#5A5C3E', hex: '#5A5C3E' },
-    { name: 'Sage Green', color: '#8B9462', hex: '#8B9462' },
-    { name: 'Light Sage', color: '#BFBF9A', hex: '#BFBF9A' }
+    { name: 'Deep Navy', color: '#1E3A8A', hex: '#1E3A8A' },
+    { name: 'Winter Blue', color: '#2563EB', hex: '#2563EB' },
+    { name: 'Sky Blue', color: '#60A5FA', hex: '#60A5FA' },
+    { name: 'Ice Blue', color: '#BFDBFE', hex: '#BFDBFE' }
   ];
 
   return (
@@ -161,10 +161,10 @@ const DressCodeSection = () => {
         >
           <div className="bg-card/30 border border-border rounded-xl p-8 shadow-soft hover-elegant transition-all duration-500">
             <h3 className="text-xl font-body font-medium text-foreground mb-6 text-center">
-              Attire Guide: Olive Green
+              Attire Guide: Deep Winter Blue
             </h3>
             <p className="text-sm text-foreground/80 text-center mb-6">
-              We kindly request our guests to wear olive green attire to complement our wedding theme.
+              We kindly request our guests to wear deep winter blue attire to complement our wedding theme.
             </p>
             <div className="grid grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto">
               {dressCodeColors.map((colorItem, index) => (
