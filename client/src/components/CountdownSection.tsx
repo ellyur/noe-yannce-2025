@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+const countdownImage = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648835/a21b69d5-4258-4ac3-896d-c0e4d9c4f362_dlotq3.jpg';
+
 const CountdownSection = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -35,19 +37,29 @@ const CountdownSection = () => {
   return (
     <motion.section 
       id="countdown" 
-      className="section-pastel-blue bg-white"
+      className="section-pastel-blue relative min-h-screen flex items-center justify-center overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 2.5 }}
     >
-      <div className="max-w-4xl mx-auto text-center relative">
+      {/* Background Image */}
+      <img
+        src={countdownImage}
+        alt="Forever starts soon"
+        className="absolute inset-0 w-full h-full object-cover"
+        data-testid="countdown-background-image"
+      />
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40" />
+      
+      <div className="max-w-4xl mx-auto text-center relative z-10 px-4 py-20">
         <motion.div 
           className="mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
         >
-          <h2 className="text-4xl font-display font-light text-foreground mb-2" data-testid="text-countdown-title">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-white mb-2" data-testid="text-countdown-title">
             Forever starts soon
           </h2>
         </motion.div>
@@ -77,7 +89,7 @@ const CountdownSection = () => {
               data-testid={`countdown-${item.label.toLowerCase()}`}
             >
               <motion.div 
-                className="text-5xl md:text-6xl lg:text-7xl font-display mb-1 text-primary"
+                className="text-5xl md:text-6xl lg:text-7xl font-display mb-1 text-white"
                 key={item.value}
                 initial={{ opacity: 0.7, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -85,7 +97,7 @@ const CountdownSection = () => {
               >
                 {item.value.toString().padStart(2, '0')}
               </motion.div>
-              <div className="text-xs font-body uppercase tracking-wider text-muted-foreground">
+              <div className="text-xs md:text-sm font-body uppercase tracking-wider text-white/80">
                 {item.label}
               </div>
             </motion.div>
