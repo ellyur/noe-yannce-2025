@@ -12,8 +12,8 @@
   :root {
     /* Modern White Theme with Deep Blue Winter Shadows & Text */
     
-    /* PRIMARY - Clean White Background */
-    --background: 0 0% 100%; /* Pure white background */
+    /* PRIMARY - Soft Winter Blue Background */
+    --background: 215 20% 97%; /* Very light winter blue background */
     --foreground: 215 35% 25%; /* Deep winter blue text */
 
     /* Card Colors - White with Shadow */
@@ -246,7 +246,7 @@
   body {
     @apply text-foreground font-body;
     font-family: var(--font-body);
-    background: #ffffff;
+    background: hsl(215, 20%, 97%);
     position: relative;
     min-height: 100vh;
     margin: 0;
