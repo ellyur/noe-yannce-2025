@@ -19,7 +19,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Background Image */}
       <img
         src={heroImage}
-        alt="Neil & Precious"
+        alt="Noe & Yannce"
         className="absolute inset-0 w-full h-full object-cover"
         data-testid="hero-image"
       />
@@ -29,8 +29,9 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       <div className="relative z-10 flex flex-col items-center text-center px-6 mt-[88px] mb-[88px]">
         {/* Tagline */}
         <div className={`transition-all duration-700 mb-4 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
-          <p className="text-sm sm:text-base md:text-lg text-white font-light tracking-[0.3em] uppercase" data-testid="text-tagline" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
-            WHERE LOVE BLOOMS
+          <p className="text-sm sm:text-base md:text-lg text-white font-light tracking-wide leading-relaxed max-w-4xl mx-auto" data-testid="text-tagline" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
+            "When the time is right, I, the <span style={{ fontSize: '1.3em', fontWeight: 500 }}>Lord</span>, will make it happen."
+            <span className="block mt-2 text-xs sm:text-sm opacity-90">— Isaiah 60:22</span>
           </p>
         </div>
         
@@ -39,7 +40,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           {animationsEnabled ? (
             <TypeAnimation
               sequence={[
-                'NEIL & PRECIOUS',
+                'NOE & YANNCE',
                 () => {
                   setShowElements(true);
                 }
@@ -60,7 +61,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
               }}
               className="typewriter-text"
             >
-              NEIL & PRECIOUS
+              NOE & YANNCE
             </span>
           )}
         </h1>
@@ -68,7 +69,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         {/* Date */}
         <div className={`transition-all duration-700 mt-6 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <p className="text-sm sm:text-base md:text-lg text-white font-light tracking-[0.3em] uppercase" data-testid="text-date" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
-            January 18, 2026 . General Santos City
+            18 December 2025, Thursday . Silang, Cavite
           </p>
         </div>
       </div>

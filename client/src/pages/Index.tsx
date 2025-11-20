@@ -8,7 +8,6 @@ import StorySection from '@/components/StorySection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
 import VenueSection from '@/components/VenueSection';
 import DressCodeSection from '@/components/DressCodeSection';
-import HashtagGiftsSection from '@/components/HashtagGiftsSection';
 import EntourageSection from '@/components/EntourageSection';
 import RSVPSection from '@/components/RSVPSection';
 import MemorableMomentsSection from '@/components/MemorableMomentsSection';
@@ -73,29 +72,28 @@ const Index = () => {
         <ScrollTriggeredTimeline />
         <CoverSection
           imageUrl={cover4Image}
-          alt="Neil & Precious Wedding Cover 4"
+          alt="Noe & Yannce Wedding Cover 4"
         />
         <VenueSection />
         <CoverSection
           imageUrl={cover2Image}
-          alt="Neil & Precious Wedding Cover 2"
+          alt="Noe & Yannce Wedding Cover 2"
         />
         <DressCodeSection />
-        <HashtagGiftsSection />
         <MemorableMomentsSection />
         <CoverSection
           imageUrl={cover1Image}
-          alt="Neil & Precious Wedding Cover 1"
+          alt="Noe & Yannce Wedding Cover 1"
         />
         <EntourageSection />
         <CoverSection
           imageUrl={cover3Image}
-          alt="Neil & Precious Wedding Cover 3"
+          alt="Noe & Yannce Wedding Cover 3"
         />
         <FAQSection />
         <CoverSection
           imageUrl={cover5Image}
-          alt="Neil & Precious Wedding Cover 5"
+          alt="Noe & Yannce Wedding Cover 5"
         />
         <Footer />
       </main>

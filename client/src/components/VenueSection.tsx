@@ -12,15 +12,15 @@ import reception from "@assets/venue_1762593761189.jpg";
 const VenueSection = () => {
   const venues = [
     {
-      title: 'Wedding Venue',
-      name: 'Rancho San Pablo',
-      address: 'Barangay Bawing, General Santos City',
+      title: 'Ceremony & Reception',
+      name: 'Mallorca Villas',
+      address: 'Clubhouse & Multi-Purpose Function Hall, Maguyam, Silang Cavite',
       image: reception,
-      mapUrl: 'https://maps.app.goo.gl/7JEvY1XZJSjeFcUM7',
-      mapEmbed: 'https://maps.google.com/maps?q=Rancho+San+Pablo+Barangay+Bawing+General+Santos+City&output=embed',
-      description: 'Join us at Rancho San Pablo for our wedding ceremony and reception. This beautiful venue will witness our vows of eternal love and host our celebration.',
-      details: 'The ceremony begins at 4:00 PM. Please arrive by 3:30 PM to be seated.',
-      startTime: '4:00 PM',
+      mapUrl: 'https://maps.app.goo.gl/vrS37RQWrZNqdxq19',
+      mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.993007422256!2d121.00529807456705!3d14.253630185478327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7dc04cf6f77d%3A0xb04b542b17dbea15!2sMallorca%20Villas!5e0!3m2!1sen!2sph!4v1763648120444!5m2!1sen!2sph',
+      description: 'Join us at Mallorca Villas for our wedding ceremony and reception. This beautiful venue will witness our vows of eternal love and host our celebration.',
+      details: 'The ceremony begins at 4:30 PM. Please arrive by 4:00 PM to be seated.',
+      startTime: '4:30 PM',
       locationGuide: 'View on Maps →'
     }
   ];
