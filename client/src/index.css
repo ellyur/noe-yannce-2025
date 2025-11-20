@@ -417,7 +417,7 @@
   }
 
   .hover-glow:hover {
-    box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 30px -8px rgba(100, 200, 255, 0.4);
   }
 
   .shadow-teal {
@@ -440,15 +440,15 @@
     width: 100%;
   }
 
-  /* Overlay for background gradients */
+  /* Overlay for background gradients - Winter */
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at top left, rgba(0,0,0,0.05), transparent 60%),
-                radial-gradient(circle at bottom right, rgba(0,0,0,0.05), transparent 60%);
+    background: radial-gradient(circle at top left, rgba(100, 200, 255, 0.05), transparent 60%),
+                radial-gradient(circle at bottom right, rgba(100, 200, 255, 0.05), transparent 60%);
     z-index: 1;
     pointer-events: none;
   }
@@ -587,22 +587,22 @@
     }
   }
 
-  /* Custom Scrollbar - Modern */
+  /* Custom Scrollbar - Winter Blue */
   ::-webkit-scrollbar {
     width: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-background;
+    background-color: hsl(210, 65%, 12%);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(100, 200, 255, 0.3);
     @apply rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(100, 200, 255, 0.5);
   }
 
   /* Remove any unwanted borders */
@@ -630,7 +630,7 @@
     outline-offset: 2px;
   }
 
-  /* Modern Button with Elegant Shadow */
+  /* Winter Button with Ice Glow Shadow */
   .shadow__btn {
     padding: 10px 20px;
     border: none;
@@ -643,11 +643,11 @@
     transition: 0.5s;
     transition-property: box-shadow;
     background: hsl(var(--primary));
-    box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px -4px rgba(100, 200, 255, 0.4);
   }
 
   .shadow__btn:hover {
-    box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px -8px rgba(100, 200, 255, 0.6);
   }
 
   /* Image Loop Animation Styles */
@@ -680,8 +680,8 @@
     height: 200px;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px -4px rgba(100, 200, 255, 0.3);
+    border: 1px solid rgba(100, 200, 255, 0.2);
   }
 
   .image-loop-img {
