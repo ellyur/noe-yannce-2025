@@ -7,10 +7,11 @@ import guestsImage from '@assets/guesttt_1762593761188.png';
 
 const DressCodeSection = () => {
   const dressCodeColors = [
-    { name: 'Deep Navy', color: '#1E3A8A', hex: '#1E3A8A' },
-    { name: 'Winter Blue', color: '#2563EB', hex: '#2563EB' },
-    { name: 'Sky Blue', color: '#60A5FA', hex: '#60A5FA' },
-    { name: 'Ice Blue', color: '#BFDBFE', hex: '#BFDBFE' }
+    { name: 'Black', color: '#000000', hex: '#000000' },
+    { name: 'Charcoal', color: '#525252', hex: '#525252' },
+    { name: 'Steel Blue', color: '#6D8499', hex: '#6D8499' },
+    { name: 'Powder Blue', color: '#A3C1D4', hex: '#A3C1D4' },
+    { name: 'White', color: '#FFFFFF', hex: '#FFFFFF' }
   ];
 
   return (
@@ -71,11 +72,8 @@ const DressCodeSection = () => {
                       Principal Sponsors
                     </h3>
                     <div className="text-center px-4">
-                      <p className="text-sm text-foreground mb-2">
-                        <span className="font-semibold">Ladies:</span> Formal Evening dress
-                      </p>
                       <p className="text-sm text-foreground">
-                        <span className="font-semibold">Gentlemen:</span> Black or any dark colored Formal
+                        Formal Suit or Barong
                       </p>
                     </div>
                   </div>
@@ -117,7 +115,7 @@ const DressCodeSection = () => {
                     </h3>
                     <div className="text-center px-4 mb-3">
                       <p className="text-sm text-foreground">
-                        Semi-Formal or Smart Casual
+                        Semi-Formal
                       </p>
                     </div>
                   </div>
@@ -161,17 +159,20 @@ const DressCodeSection = () => {
         >
           <div className="bg-card/30 border border-border rounded-xl p-8 shadow-soft hover-elegant transition-all duration-500">
             <h3 className="text-xl font-body font-medium text-foreground mb-6 text-center">
-              Attire Guide: Deep Winter Blue
+              Color Palette
             </h3>
             <p className="text-sm text-foreground/80 text-center mb-6">
-              We kindly request our guests to wear deep winter blue attire to complement our wedding theme.
+              Suggested shades for all guests to complement our wedding theme.
             </p>
-            <div className="grid grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-5 gap-3 sm:gap-4 max-w-3xl mx-auto">
               {dressCodeColors.map((colorItem, index) => (
                 <div key={index} className="text-center group">
                   <div 
-                    className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-xl border-2 border-border shadow-soft group-hover:scale-105 transition-transform duration-300"
-                    style={{ backgroundColor: colorItem.color }}
+                    className="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-xl shadow-soft group-hover:scale-105 transition-transform duration-300"
+                    style={{ 
+                      backgroundColor: colorItem.color,
+                      border: colorItem.color === '#FFFFFF' ? '2px solid #E5E7EB' : '2px solid transparent'
+                    }}
                   ></div>
                   <p className="text-xs text-foreground mt-2">{colorItem.name}</p>
                 </div>
