@@ -35,7 +35,7 @@ const CountdownSection = () => {
   return (
     <motion.section 
       id="countdown" 
-      className="section-pastel-blue relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="section-pastel-blue relative flex items-center justify-center overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 2.5 }}
