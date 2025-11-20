@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
 import { useAnimationContext } from '@/contexts/AnimationContext';
 
-const heroImage = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566012/hero-section_uphcwk.jpg';
+const heroImage = 'https://res.cloudinary.com/dldegdz30/image/upload/v1763612133/PHOTO_OPS_3_eeseuv.png';
 
 interface HeroSectionProps {
   audioRef: React.RefObject<HTMLAudioElement>;
