@@ -130,7 +130,7 @@ const EntourageSection = () => {
               {/* Men Column */}
               <div className="space-y-2">
                 {entourageData.principalSponsors.soloMen.map((name, index) => (
-                  <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground text-right" data-testid={`principal-sponsor-man-${index}`}>
+                  <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground text-right whitespace-nowrap" data-testid={`principal-sponsor-man-${index}`}>
                     {name}
                   </p>
                 ))}
@@ -139,7 +139,7 @@ const EntourageSection = () => {
               {/* Women Column */}
               <div className="space-y-2">
                 {entourageData.principalSponsors.soloWomen.map((name, index) => (
-                  <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground text-left" data-testid={`principal-sponsor-woman-${index}`}>
+                  <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground text-left whitespace-nowrap" data-testid={`principal-sponsor-woman-${index}`}>
                     {name}
                   </p>
                 ))}

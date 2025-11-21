@@ -181,7 +181,7 @@ export default function ScrollTriggeredTimeline() {
     return (
         <motion.section 
             id="timeline" 
-            className="section-pastel-blue bg-white relative overflow-hidden"
+            className="section-pastel-blue bg-white relative overflow-hidden mt-[21px] mb-[21px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
