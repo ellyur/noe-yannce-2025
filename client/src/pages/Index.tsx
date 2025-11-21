@@ -52,7 +52,7 @@ const Index = () => {
         preload="auto"
         style={{ display: 'none' }}
         data-testid="background-audio"
-        src="https://res.cloudinary.com/dnokhmes0/video/upload/v1762595790/ytmp3free.cc_rico-blanco-balisong-transformed-2016-youtubemp3free.org_w6epbo.mp3"
+        src="https://res.cloudinary.com/dcay7rt5q/video/upload/v1763714874/Musika_by_Dionela_piano_cover_sheet_music_lyrics_ylhcr5.mp3"
       />
 
       <MusicConsentPopup
