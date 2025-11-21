@@ -93,7 +93,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src={Monogram_removebg_preview_DaokIrKn} 
+              src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763715504/image-removebg-preview_ne5da6.png" 
               alt="P&D Logo" 
               className="h-12 w-auto"
             />
