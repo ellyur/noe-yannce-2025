@@ -66,7 +66,6 @@ const Index = () => {
         <main className="relative z-10 space-y-0">
           <HeroSection audioRef={audioRef} />
           <InvitationRevealSection />
-          <RSVPSection />
           <CountdownSection />
           <ImageLoop />
           <StorySection />
@@ -88,6 +87,7 @@ const Index = () => {
             alt="Dress Code Cover"
             delay={9.5}
           />
+          <RSVPSection />
           <EntourageSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/593a4f25-5c82-48af-b512-6535ba932e26_qtu8ei.jpg"
