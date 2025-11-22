@@ -19,6 +19,7 @@ import MusicConsentPopup from '@/components/MusicConsentPopup';
 import { AnimationContext } from '@/contexts/AnimationContext';
 import CoverImage from '@/components/CoverImage';
 import PolaroidSection from '@/components/PolaroidSection';
+import SimpleGiftSection from '@/components/SimpleGiftSection';
 
 // Cover media
 const cover1Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566013/cover1_emzxqg.jpg';
@@ -89,6 +90,7 @@ const Index = () => {
             delay={7.5}
           />
           <DressCodeSection />
+          <SimpleGiftSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/7b85c12e-3667-45f9-a62e-2f11100d4448_bkz9f0.jpg"
             alt="Dress Code Cover"
