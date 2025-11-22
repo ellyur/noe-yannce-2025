@@ -78,7 +78,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             </div>
 
             <p 
-              className="text-2xl md:text-3xl text-primary relative block leading-relaxed max-w-2xl mx-auto"
+              className="text-2xl md:text-3xl relative block leading-relaxed max-w-2xl mx-auto text-[#1313e1]"
               style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
             >
               With great gratitude and love, we humbly ask your blessing and your presence to witness the day as we pronounce our covenant before the Lord
