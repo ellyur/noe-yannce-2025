@@ -18,6 +18,7 @@ import InvitationRevealSection from '@/components/InvitationRevealSection';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
 import { AnimationContext } from '@/contexts/AnimationContext';
 import CoverImage from '@/components/CoverImage';
+import PolaroidSection from '@/components/PolaroidSection';
 
 // Cover media
 const cover1Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566013/cover1_emzxqg.jpg';
@@ -71,6 +72,7 @@ const Index = () => {
             alt="Noe & Yannce"
             delay={3.5}
           />
+          <PolaroidSection />
           <CountdownSection />
           <ImageLoop />
           <StorySection />
