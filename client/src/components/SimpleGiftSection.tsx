@@ -17,6 +17,18 @@ const SimpleGiftSection = () => {
       </div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
+        {/* Section Header */}
+        <motion.div 
+          className="mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 8.6 }}
+        >
+          <h2 className="text-5xl font-display font-light italic text-gold-bright mb-8">
+            Gift Guide
+          </h2>
+        </motion.div>
+
         <motion.div 
           className="mb-12"
           initial={{ opacity: 0, y: 30 }}
