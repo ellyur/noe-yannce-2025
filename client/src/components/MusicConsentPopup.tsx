@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Volume2, VolumeX, Music, Heart } from 'lucide-react';
+import backgroundImage from '@assets/image_1763826959851.png';
 
 interface MusicConsentPopupProps {
   onConsent: (consent: boolean) => void;
@@ -8,8 +8,8 @@ interface MusicConsentPopupProps {
 }
 
 const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => {
-  const handleConsent = (consent: boolean) => {
-    onConsent(consent);
+  const handleOpenInvitation = () => {
+    onConsent(true);
   };
 
   return (
@@ -19,80 +19,75 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4"
+          className="fixed inset-0 z-[100] flex items-center justify-center"
+          style={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
         >
           <motion.div
-            initial={{ scale: 0.9, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            transition={{ type: "spring", duration: 0.5 }}
-            className="bg-background rounded-lg p-8 md:p-12 max-w-lg w-full mx-4 shadow-2xl border border-border relative overflow-hidden"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="flex flex-col items-center justify-center gap-8 px-4"
           >
-            <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-primary opacity-20"></div>
-            <div className="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-primary opacity-20"></div>
-            <div className="absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 border-primary opacity-20"></div>
-            <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-primary opacity-20"></div>
-            
-            <div className="relative text-center space-y-6">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary"></div>
-                <Heart className="w-4 h-4 text-primary fill-primary" />
-                <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary"></div>
-              </div>
+            <div className="text-center space-y-6 max-w-2xl">
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                className="text-white text-xl md:text-2xl lg:text-3xl font-serif italic leading-relaxed"
+                style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
+              >
+                "When the time is right, I, the Lord, will make it happen."
+                <br />
+                <span className="text-lg md:text-xl lg:text-2xl">— Isaiah 60:22</span>
+              </motion.p>
 
               <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.6, duration: 0.8 }}
                 className="flex justify-center"
               >
-                <div className="bg-primary p-5 rounded-full shadow-lg">
-                  <Music className="h-10 w-10 text-primary-foreground" />
-                </div>
+                <img
+                  src="https://res.cloudinary.com/dnpptxp0y/image/upload/v1763827241/image-removebg-preview_1_wdvtje.png"
+                  alt="Wedding Logo"
+                  className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain"
+                />
               </motion.div>
-              
-              <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary font-serif tracking-wide">
-                  A Musical Journey
-                </h2>
-                
-                <div className="flex items-center justify-center gap-2">
-                  <div className="h-px w-12 bg-primary"></div>
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                  <div className="h-px w-12 bg-primary"></div>
-                </div>
 
-                <p className="text-foreground/80 leading-relaxed text-base md:text-lg italic px-4">
-                  Would you like to play music to explore more of our wedding invitation?
-                </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 pt-8">
-                <Button
-                  onClick={() => handleConsent(true)}
-                  className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-5 px-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl text-base"
-                  data-testid="button-allow-music"
-                >
-                  <Volume2 className="h-5 w-5 mr-2" />
-                  Play Music
-                </Button>
-                <Button
-                  onClick={() => handleConsent(false)}
-                  variant="outline"
-                  className="flex-1 border-2 border-border hover:border-primary text-foreground hover:text-primary bg-transparent hover:bg-muted font-medium py-5 px-6 rounded-lg transition-all duration-300 text-base"
-                  data-testid="button-skip-music"
-                >
-                  <VolumeX className="h-5 w-5 mr-2" />
-                  Continue Silently
-                </Button>
-              </div>
-
-              <div className="flex items-center justify-center gap-2 pt-4">
-                <Heart className="w-3 h-3 text-primary fill-primary opacity-50" />
-                <div className="w-1 h-1 rounded-full bg-primary opacity-50"></div>
-                <Heart className="w-3 h-3 text-primary fill-primary opacity-50" />
-              </div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9, duration: 0.8 }}
+                className="text-white text-base md:text-lg lg:text-xl tracking-widest uppercase"
+                style={{ 
+                  fontVariant: 'small-caps',
+                  textShadow: '0 2px 10px rgba(0,0,0,0.3)',
+                  letterSpacing: '0.3em'
+                }}
+              >
+                noe & yannce
+              </motion.p>
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2, duration: 0.8 }}
+            >
+              <Button
+                onClick={handleOpenInvitation}
+                className="bg-white text-gray-800 hover:bg-white/90 font-semibold py-6 px-12 rounded-md text-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                data-testid="button-open-invitation"
+              >
+                Open Invitation
+              </Button>
+            </motion.div>
           </motion.div>
         </motion.div>
       )}
