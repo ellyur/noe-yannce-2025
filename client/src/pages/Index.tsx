@@ -66,6 +66,11 @@ const Index = () => {
         <main className="relative z-10 space-y-0">
           <HeroSection audioRef={audioRef} />
           <InvitationRevealSection />
+          <CoverImage
+            src="https://res.cloudinary.com/dldegdz30/image/upload/v1763612133/PHOTO_OPS_3_eeseuv.png"
+            alt="Noe & Yannce"
+            delay={3.5}
+          />
           <CountdownSection />
           <ImageLoop />
           <StorySection />
