@@ -21,7 +21,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-[100] flex items-center justify-center"
           style={{
-            backgroundImage: `url(${backgroundImage})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
