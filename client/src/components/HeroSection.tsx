@@ -20,7 +20,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       }}
     >
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-white/40 dark:bg-black/40 z-0"></div>
+      <div className="absolute inset-0 bg-black/50 z-0"></div>
       
       <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
         {/* Date - Big and Bold */}
