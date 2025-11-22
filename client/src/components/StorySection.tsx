@@ -13,12 +13,6 @@ const StorySection = () => {
       transition={{ duration: 1, delay: 3.5 }}
       data-testid="section-story"
     >
-      <img
-        src={storyCoupleImage}
-        alt="Our Story"
-        className="w-full h-auto object-cover"
-        data-testid="img-story-background"
-      />
     </motion.section>
   );
 };

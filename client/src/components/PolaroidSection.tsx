@@ -40,14 +40,6 @@ const PolaroidSection = () => {
                   {/* Subtle overlay on hover */}
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-300" />
                 </div>
-                
-                {/* Modern caption with accent */}
-                <div className="mt-4 text-center relative">
-                  <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-8 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
-                  <p className="text-foreground text-sm font-medium tracking-wider uppercase">
-                    {polaroid.alt}
-                  </p>
-                </div>
               </div>
             </div>
           </div>
