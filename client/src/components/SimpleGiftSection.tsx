@@ -31,7 +31,7 @@ const SimpleGiftSection = () => {
 
             {/* Text */}
             <div className="space-y-6">
-              <p className="text-xl font-body text-primary-foreground leading-relaxed whitespace-pre-line">
+              <p className="text-xl font-body text-foreground leading-relaxed whitespace-pre-line">
                 As we join our lives and dreams,
                 your love and support mean the world to us.
                 Should you wish to give a gift,
