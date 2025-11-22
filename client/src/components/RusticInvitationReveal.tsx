@@ -87,7 +87,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"/>
 
             <p 
-              className="text-lg md:text-xl text-foreground leading-relaxed max-w-xl mx-auto font-light"
+              className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto font-light text-[#8f8ff1]"
             >
               You are cordially invited to witness as we tie the knot!
             </p>
