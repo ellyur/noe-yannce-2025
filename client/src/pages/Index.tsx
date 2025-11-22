@@ -78,11 +78,6 @@ const Index = () => {
           <ImageLoop />
           <StorySection />
           <ScrollTriggeredTimeline />
-          <CoverImage
-            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648836/5c3e35c1-0656-4ea1-a1f1-fe2bbc60d5c1_py2mi9.jpg"
-            alt="Timeline Cover"
-            delay={5.5}
-          />
           <VenueSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648835/2c92ea32-c6eb-4bca-9735-94d09029ea31_nzwmvr.jpg"
