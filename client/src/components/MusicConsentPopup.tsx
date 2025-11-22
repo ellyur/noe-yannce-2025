@@ -64,11 +64,10 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.9, duration: 0.8 }}
-                className="text-white text-base md:text-lg lg:text-xl tracking-widest uppercase"
+                className="text-white text-2xl md:text-3xl lg:text-4xl tracking-wide font-script"
                 style={{ 
-                  fontVariant: 'small-caps',
                   textShadow: '0 2px 10px rgba(0,0,0,0.3)',
-                  letterSpacing: '0.3em'
+                  letterSpacing: '0.2em'
                 }}
               >
                 noe & yannce
