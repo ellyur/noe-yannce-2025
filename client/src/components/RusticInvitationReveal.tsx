@@ -78,7 +78,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             </div>
 
             <p 
-              className="text-2xl md:text-3xl relative block leading-relaxed max-w-2xl mx-auto text-[#1313e1]"
+              className="text-2xl md:text-3xl relative block leading-relaxed max-w-2xl mx-auto text-[#293c56]"
               style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
             >
               With great gratitude and love, we humbly ask your blessing and your presence to witness the day as we pronounce our covenant before the Lord
@@ -87,7 +87,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"/>
 
             <p 
-              className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto font-light text-[#8f8ff1]"
+              className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto font-light text-[#293c56]"
             >
               You are cordially invited to witness as we tie the knot!
             </p>
