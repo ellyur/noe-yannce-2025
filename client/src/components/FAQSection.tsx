@@ -49,11 +49,6 @@ const FAQSection = () => {
       icon: Camera,
       answer: "We invite you to be fully present with us during this special moment. Please keep your phones and cameras away — our professional photographer will capture everything beautifully. Your smiles and presence mean the most to us!"
     },
-    {
-      question: "Can I take photos during the reception?",
-      icon: Camera,
-      answer: "Yes, please do! Snap away during cocktail hour and the reception, and share your favorite memories using our official hashtags: #TheweddingofD&R and #D&R2026"
-    }
   ];
 
   return (
