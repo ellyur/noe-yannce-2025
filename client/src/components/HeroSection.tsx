@@ -17,9 +17,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-foreground tracking-tight font-bold uppercase"
           data-testid="text-main-date"
           style={{ fontFamily: 'Boska, serif', fontWeight: 700 }}
-        >
-          18 DECEMBER 2025
-        </h1>
+        >12.18.25</h1>
 
         {/* Address */}
         <div className="space-y-2">
@@ -39,7 +37,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           </p>
         </div>
       </div>
-
       {/* Scroll Down Arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="flex flex-col items-center justify-center space-y-2 text-center">
@@ -49,7 +46,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           </svg>
         </div>
       </div>
-
       <style>{`
         .hero-section {
           min-height: 100vh !important;
