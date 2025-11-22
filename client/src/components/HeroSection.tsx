@@ -25,7 +25,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
         {/* Date - Big and Bold */}
         <h1 
-          className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-foreground tracking-tight font-bold uppercase"
+          className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight font-bold uppercase"
           data-testid="text-main-date"
           style={{ fontFamily: 'Boska, serif', fontWeight: 700 }}
         >12.18.25</h1>
@@ -33,14 +33,14 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         {/* Address */}
         <div className="space-y-2">
           <p 
-            className="text-2xl sm:text-3xl md:text-4xl text-foreground font-light tracking-wide"
+            className="text-2xl sm:text-3xl md:text-4xl text-white font-light tracking-wide"
             data-testid="text-venue"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}
           >
             Clubhouse & Multi-Purpose Function Hall
           </p>
           <p 
-            className="text-xl sm:text-2xl md:text-3xl text-foreground/80 font-light tracking-wide"
+            className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide"
             data-testid="text-location"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}
           >
