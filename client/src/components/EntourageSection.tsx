@@ -54,19 +54,15 @@ const EntourageSection = () => {
       "Reynalyn Rodriguez",
       "Mikaella Gatchalian"
     ],
-    flowerGirls: {
-      groom: [
-        "NoeAnn Velasco",
-        "Shalanie Velasco",
-        "Maureen Velasco",
-        "Jenica Velasco"
-      ],
-      bride: [
-        "Ahryessa Adlawan",
-        "Eun Jandy Barcenas",
-        "Sharmaine Velasco"
-      ]
-    }
+    flowerGirls: [
+      "NoeAnn Velasco",
+      "Shalanie Velasco",
+      "Maureen Velasco",
+      "Jenica Velasco",
+      "Sharmaine Velasco",
+      "Ahryessa Adlawan",
+      "Eun Jandy Barcenas"
+    ]
   };
 
   return (
@@ -260,27 +256,15 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 10.0 }}
         >
-          <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
-            <div className="text-center" data-testid="groom-flower-girls-section">
-              <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
-                Groom's Flower Girls
-              </h3>
-              {entourageData.flowerGirls.groom.map((name, index) => (
-                <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1 text-right" data-testid={`groom-flower-girl-${index}`}>
-                  {name}
-                </p>
-              ))}
-            </div>
-            <div className="text-center" data-testid="bride-flower-girls-section">
-              <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
-                Bride's Flower Girls
-              </h3>
-              {entourageData.flowerGirls.bride.map((name, index) => (
-                <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1 text-left" data-testid={`bride-flower-girl-${index}`}>
-                  {name}
-                </p>
-              ))}
-            </div>
+          <div className="text-center max-w-4xl mx-auto" data-testid="flower-girls-section">
+            <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
+              Flower Girls
+            </h3>
+            {entourageData.flowerGirls.map((name, index) => (
+              <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1" data-testid={`flower-girl-${index}`}>
+                {name}
+              </p>
+            ))}
           </div>
         </motion.div>
       </div>
