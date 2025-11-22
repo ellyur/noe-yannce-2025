@@ -98,7 +98,7 @@ const EntourageSection = () => {
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             {entourageData.parents.map((parent, index) => (
               <div key={index} className="text-center" data-testid={`parents-section-${index}`}>
-                <h3 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary">
+                <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
                   {parent.label}
                 </h3>
                 {parent.names.map((name, nameIndex) => (
@@ -179,7 +179,7 @@ const EntourageSection = () => {
         >
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="best-man-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary">
+              <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
                 {entourageData.bestMan.role}
               </h3>
               <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="best-man-name">
@@ -187,7 +187,7 @@ const EntourageSection = () => {
               </p>
             </div>
             <div className="text-center" data-testid="maid-of-honor-section">
-              <h3 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-2 md:mb-3 text-primary">
+              <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
                 {entourageData.maidOfHonor.role}
               </h3>
               <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="maid-of-honor-name">
@@ -238,7 +238,7 @@ const EntourageSection = () => {
           <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
             {entourageData.additionalRoles.map((item, index) => (
               <div key={index} className="text-center" data-testid={`additional-role-${item.role.toLowerCase().replace(/\s+/g, '-')}`}>
-                <h4 className="text-sm md:text-lg lg:text-xl font-display font-bold mb-1 md:mb-2 text-primary">
+                <h4 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
                   {item.role}
                 </h4>
                 <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid={`${item.role.toLowerCase().replace(/\s+/g, '-')}-name`}>
