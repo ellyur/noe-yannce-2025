@@ -6,10 +6,10 @@ const guestsImage = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v17636488
 const DressCodeSection = () => {
   const dressCodeColors = [
     { name: 'Black', color: '#000000', hex: '#000000' },
-    { name: 'Charcoal', color: '#525252', hex: '#525252' },
-    { name: 'Steel Blue', color: '#6D8499', hex: '#6D8499' },
-    { name: 'Powder Blue', color: '#A3C1D4', hex: '#A3C1D4' },
-    { name: 'White', color: '#FFFFFF', hex: '#FFFFFF' }
+    { name: 'Dark Gray', color: '#4A4A4A', hex: '#4A4A4A' },
+    { name: 'Silver Gray', color: '#C0C0C0', hex: '#C0C0C0' },
+    { name: 'Dusty Blue', color: '#9CAFB7', hex: '#9CAFB7' },
+    { name: 'Silver', color: '#B8B8B8', hex: '#B8B8B8' }
   ];
 
   return (
