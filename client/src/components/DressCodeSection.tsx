@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { optimizeCloudinaryUrl } from '@/lib/cloudinaryOptimize';
-const principalSponsorsImage = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648787/d7807c0e-3e99-43e9-b6c9-a76c9d55fbf8_ucpcpu.png';
-const guestsImage = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648852/845c4fa2-3bbe-43bb-ad14-b6d1f6bc62c8_rib3mv.png';
+const principalSponsorsImage = 'https://res.cloudinary.com/dnpptxp0y/image/upload/v1763829482/5e59657c-4dee-44de-8927-e092f0cfbb8a_dhpp5j.png';
+const guestsImage = 'https://res.cloudinary.com/dnpptxp0y/image/upload/v1763829834/26ee2b36-59d2-459d-b1bf-0b1b893f3681_z4kre1.png';
 
 const DressCodeSection = () => {
   const dressCodeColors = [

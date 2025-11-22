@@ -4,13 +4,24 @@ interface HeroSectionProps {
   audioRef: React.RefObject<HTMLAudioElement>;
 }
 
+const heroBackgroundImage = 'https://res.cloudinary.com/dnpptxp0y/image/upload/v1763830038/b619ba50-28ae-428a-9936-55933ccfafcd_l11rrv.png';
+
 const HeroSection = ({ audioRef }: HeroSectionProps) => {
   const { animationsEnabled } = useAnimationContext();
 
   return (
     <section 
-      className="hero-section bg-white relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="hero-section relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `url(${heroBackgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-white/40 dark:bg-black/40 z-0"></div>
+      
       <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
         {/* Date - Big and Bold */}
         <h1 
