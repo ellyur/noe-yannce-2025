@@ -77,34 +77,20 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
               <div className="w-8 h-px bg-gradient-to-l from-transparent to-primary/50" />
             </div>
 
-            <span 
-              className="text-5xl md:text-6xl text-primary relative block"
+            <p 
+              className="text-2xl md:text-3xl text-primary relative block leading-relaxed max-w-2xl mx-auto"
               style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
             >
-              You're Invited
-              {/* Subtle underline accent */}
-              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-32 h-0.5 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-            </span>
+              With great gratitude and love, we humbly ask your blessing and your presence to witness the day as we pronounce our covenant before the Lord
+            </p>
 
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"/>
 
             <p 
               className="text-lg md:text-xl text-foreground leading-relaxed max-w-xl mx-auto font-light"
             >
-              Come witness the moment we tie the knot and start our greatest adventure together
+              You are cordially invited to witness as we tie the knot!
             </p>
-
-            {/* Stylized divider */}
-            <div className="flex items-center justify-center gap-3 py-2">
-              <div className="w-12 h-px bg-primary/30" />
-              <div className="w-1.5 h-1.5 rounded-full bg-primary/50" />
-              <div className="w-12 h-px bg-primary/30" />
-            </div>
-
-            <div className="text-base md:text-lg text-muted-foreground italic space-y-2">
-              <p>with love, laughter,</p>
-              <p>and a lifetime of memories</p>
-            </div>
 
             {/* Modern Hearts decoration */}
             <div className="flex items-center justify-center gap-3 pt-6">
