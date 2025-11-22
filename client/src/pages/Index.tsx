@@ -19,6 +19,7 @@ import MusicConsentPopup from '@/components/MusicConsentPopup';
 import { AnimationContext } from '@/contexts/AnimationContext';
 import CoverImage from '@/components/CoverImage';
 import PolaroidSection from '@/components/PolaroidSection';
+import GiftSection from '@/components/GiftSection';
 
 // Cover media
 const cover1Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566013/cover1_emzxqg.jpg';
@@ -96,6 +97,7 @@ const Index = () => {
           />
           <RSVPSection />
           <EntourageSection />
+          <GiftSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/593a4f25-5c82-48af-b512-6535ba932e26_qtu8ei.jpg"
             alt="Entourage Cover"
