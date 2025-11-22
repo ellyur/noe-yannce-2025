@@ -5,6 +5,7 @@ import { Heart } from 'lucide-react';
 const SimpleGiftSection = () => {
   return (
     <motion.section 
+      id="gift-guide"
       className="section-hard-blue bg-white py-20 px-4 relative overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

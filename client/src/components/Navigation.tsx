@@ -12,11 +12,11 @@ const Navigation = () => {
   const navItems = [
     { name: 'Our Moments', href: '#slideshow' },
     { name: 'Countdown', href: '#countdown' },
-    { name: 'Our Story', href: '#story' },
     { name: 'Timeline', href: '#timeline' },
     { name: 'Venue', href: '#venue' },
     { name: 'Dress Code', href: '#dresscode' },
-    { name: 'Prenup Photos', href: '#prenup-photos' },
+    { name: 'Gift Guide', href: '#gift-guide' },
+    { name: 'FAQs', href: '#faqs' },
     { name: 'RSVP', href: '#rsvp' }
   ];
 

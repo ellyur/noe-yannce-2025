@@ -53,6 +53,7 @@ const FAQSection = () => {
 
   return (
     <motion.section 
+      id="faqs"
       className="section-pastel-blue bg-white py-20 px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -103,7 +104,7 @@ const FAQSection = () => {
                   )}
                 </div>
               </button>
-              
+
               {openItems.includes(index) && (
                 <div className="px-8 pb-6">
                   <div className="w-full h-px bg-border mb-4"></div>
