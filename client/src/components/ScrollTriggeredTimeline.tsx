@@ -244,10 +244,15 @@ export default function ScrollTriggeredTimeline() {
                         Oh Snap!
                     </h3>
                     <p className="text-sm md:text-base text-muted-foreground mb-4">
-                        Help us capture moments on our special day by using the hashtag
+                        Help us capture moments on our special day by using these hashtags
                     </p>
-                    <div className="inline-block border-2 border-primary rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full">
-                        <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag">#Noe&Yannce2025</p>
+                    <div className="space-y-3 max-w-full">
+                        <div className="inline-block border-2 border-primary rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full">
+                            <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag-1">#FiNOEllyltsOfficialWithYANNCE</p>
+                        </div>
+                        <div className="inline-block border-2 border-primary rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full ml-2">
+                            <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag-2">#aNOEtherChapterWothYANNCE</p>
+                        </div>
                     </div>
                 </div>
             </motion.div>
