@@ -22,35 +22,64 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       
-      {/* Top Left Image - 4x Bigger at edge */}
-      <div className="absolute top-0 left-0 z-10">
-        <img 
-          src="https://res.cloudinary.com/dh7s1ttxf/image/upload/v1763874468/image-removebg-preview_3_u5p9nc.png"
-          alt="Wedding Decoration"
-          className="w-[32rem] h-[32rem] md:w-[48rem] md:h-[48rem] lg:w-[64rem] lg:h-[64rem] object-contain"
-          data-testid="hero-decoration-image"
-        />
+      {/* Snowflakes */}
+      <div className="absolute inset-0 z-5 pointer-events-none">
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={i}
+            className="snowflake absolute text-white opacity-70"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              fontSize: `${Math.random() * 20 + 15}px`,
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${Math.random() * 3 + 5}s`
+            }}
+          >
+            ❄
+          </div>
+        ))}
       </div>
       
-      <div className="relative z-10 flex flex-col items-center text-center px-6 gap-12">
-        {/* Date - Even Bigger with pipes */}
+      <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
+        {/* "We are Getting Married" text at top */}
+        <h2 
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white italic leading-tight mb-8"
+          data-testid="text-getting-married"
+          style={{ 
+            fontFamily: 'Brush Script MT, cursive',
+            fontWeight: 400,
+            textShadow: '0 2px 10px rgba(0,0,0,0.5)'
+          }}
+        >
+          We are<br />Getting Married
+        </h2>
+        
+        {/* Decorative line */}
+        <div className="w-32 h-px bg-white/50 mb-4"></div>
+
+        {/* Date */}
         <h1 
-          className="text-9xl sm:text-[10rem] md:text-[14rem] lg:text-[20rem] text-white tracking-tight font-bold uppercase leading-none"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-wider font-light"
           data-testid="text-main-date"
-          style={{ fontFamily: 'Boska, serif', fontWeight: 700 }}
+          style={{ 
+            fontFamily: 'Satoshi, sans-serif', 
+            fontWeight: 300,
+            letterSpacing: '0.2em'
+          }}
         >12|18|25</h1>
 
-        {/* Address - Original Size */}
-        <div className="space-y-2">
+        {/* Address */}
+        <div className="space-y-2 mt-8">
           <p 
-            className="text-2xl sm:text-3xl md:text-4xl text-white font-light tracking-wide"
+            className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide"
             data-testid="text-venue"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}
           >
             Clubhouse & Multi-Purpose Function Hall
           </p>
           <p 
-            className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide"
+            className="text-lg sm:text-xl md:text-2xl text-white font-light tracking-wide"
             data-testid="text-location"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}
           >
@@ -70,6 +99,19 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       <style>{`
         .hero-section {
           min-height: 100vh !important;
+        }
+        
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-20px) rotate(180deg);
+          }
+        }
+        
+        .snowflake {
+          animation: float infinite ease-in-out;
         }
         
         @media (max-width: 767px) {
