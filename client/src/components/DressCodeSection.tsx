@@ -9,7 +9,7 @@ const DressCodeSection = () => {
     { name: 'Dark Gray', color: '#4A4A4A', hex: '#4A4A4A' },
     { name: 'Silver Gray', color: '#C0C0C0', hex: '#C0C0C0' },
     { name: 'Dusty Blue', color: '#9CAFB7', hex: '#9CAFB7' },
-    { name: 'Silver', color: '#B8B8B8', hex: '#B8B8B8' }
+    { name: 'Dark Gray', color: '#6B6B6B', hex: '#6B6B6B' }
   ];
 
   return (
