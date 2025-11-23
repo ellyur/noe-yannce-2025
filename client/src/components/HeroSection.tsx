@@ -43,7 +43,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       
       {/* "We are Getting Married" text at top left - slanted */}
       <h2 
-        className="absolute top-8 left-8 md:top-12 md:left-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white italic leading-tight z-10"
+        className="absolute top-8 left-8 md:top-16 md:left-16 text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white italic leading-tight z-10 text-center"
         data-testid="text-getting-married"
         style={{ 
           fontFamily: 'Brush Script MT, cursive',
