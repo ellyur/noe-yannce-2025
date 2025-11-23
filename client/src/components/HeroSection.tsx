@@ -52,9 +52,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         We are<br />Getting Married
       </h2>
       <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
-        {/* Decorative line */}
-        <div className="w-32 h-px bg-white/50 mb-4"></div>
-
         {/* Date */}
         <h1 
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-wider font-light"
