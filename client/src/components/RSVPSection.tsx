@@ -24,7 +24,7 @@ const RSVPSection = () => {
             style={{ fontFamily: 'Boska, serif', fontWeight: 300, fontStyle: 'normal' }} 
             data-testid="text-rsvp-header"
           >
-            RSVP Here
+            The RSVP
           </h2>
         </motion.div>
 

@@ -97,7 +97,7 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.5 }}
         >
-          Entourage
+          The Entourage
         </motion.h2>
 
         {/* Officiating Minister */}

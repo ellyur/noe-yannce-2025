@@ -41,7 +41,7 @@ const VenueSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 6.8 }}
         >
           <h1 className="text-4xl font-display font-light mb-2 text-primary" data-testid="text-venue-section-title">
-            Venue
+            The Venue
           </h1>
         </motion.div>
         {/* Venues List */}

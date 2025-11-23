@@ -26,7 +26,7 @@ const SimpleGiftSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.6 }}
         >
           <h2 className="text-5xl font-display font-light italic text-gold-bright mb-8">
-            Gift Guide
+            The Gift Guide
           </h2>
         </motion.div>
 

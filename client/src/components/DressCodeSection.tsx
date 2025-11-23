@@ -40,7 +40,7 @@ const DressCodeSection = () => {
           <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-primary/30 rounded-full"></div>
 
           <h2 className="font-display font-light italic text-gold mb-8 text-[48px]" data-testid="text-dresscode-title">
-            Attire Guide
+            The Attire Guide
           </h2>
           <p className="text-lg text-foreground max-w-2xl mx-auto" data-testid="text-attire-description">
             We would love to see our favorite people wear the attire respectively that matches the color below.

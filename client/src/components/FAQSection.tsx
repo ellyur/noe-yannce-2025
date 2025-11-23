@@ -68,7 +68,7 @@ const FAQSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 11.8 }}
         >
           <h2 className="text-5xl font-display font-light italic text-primary mb-8" data-testid="text-faq-title">
-            Frequently Asked Questions
+            The Frequently Asked Questions
           </h2>
           <p className="text-lg font-body text-foreground max-w-2xl mx-auto">
             We've compiled answers to the most common questions about our wedding day. 
