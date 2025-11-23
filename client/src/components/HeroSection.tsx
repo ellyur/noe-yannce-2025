@@ -22,25 +22,35 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       
-      <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
-        {/* Date - Big and Bold */}
+      {/* Top Left Image */}
+      <div className="absolute top-4 left-4 md:top-8 md:left-8 z-10">
+        <img 
+          src="https://res.cloudinary.com/dh7s1ttxf/image/upload/v1763874468/image-removebg-preview_3_u5p9nc.png"
+          alt="Wedding Decoration"
+          className="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 object-contain"
+          data-testid="hero-decoration-image"
+        />
+      </div>
+      
+      <div className="relative z-10 flex flex-col items-center text-center px-6 gap-12">
+        {/* Date - Extra Big and Bold */}
         <h1 
-          className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight font-bold uppercase"
+          className="text-8xl sm:text-9xl md:text-[12rem] lg:text-[16rem] text-white tracking-tight font-bold uppercase leading-none"
           data-testid="text-main-date"
           style={{ fontFamily: 'Boska, serif', fontWeight: 700 }}
         >12.18.25</h1>
 
-        {/* Address */}
-        <div className="space-y-2">
+        {/* Address - Much Bigger */}
+        <div className="space-y-4">
           <p 
-            className="text-2xl sm:text-3xl md:text-4xl text-white font-light tracking-wide"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-light tracking-wide"
             data-testid="text-venue"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}
           >
             Clubhouse & Multi-Purpose Function Hall
           </p>
           <p 
-            className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-light tracking-wide"
             data-testid="text-location"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}
           >
