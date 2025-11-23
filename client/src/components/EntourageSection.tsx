@@ -65,10 +65,10 @@ const EntourageSection = () => {
     flowerGirls: {
       bride: [
         "Ahryessa Adlawan",
-        "Eun Jandy Barcenas",
-        "NoeAnn Velasco"
+        "Eun Jandy Barcenas"
       ],
       groom: [
+        "NoeAnn Velasco",
         "Shalanie Velasco",
         "Maureen Velasco",
         "Jenica Velasco",
