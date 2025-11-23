@@ -21,7 +21,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
     >
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
-      
       {/* Snowflakes */}
       <div className="absolute inset-0 z-5 pointer-events-none">
         {[...Array(15)].map((_, i) => (
@@ -40,10 +39,9 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           </div>
         ))}
       </div>
-      
       {/* "We are Getting Married" text at top left - slanted */}
       <h2 
-        className="absolute top-8 left-8 md:top-16 md:left-16 text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white italic leading-tight z-10 text-center"
+        className="absolute top-8 left-8 md:top-16 md:left-16 text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white italic leading-tight z-10 text-center ml-[-26px] mr-[-26px]"
         data-testid="text-getting-married"
         style={{ 
           fontFamily: 'Brush Script MT, cursive',
@@ -55,7 +53,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       >
         We are<br />Getting Married
       </h2>
-
       <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
         {/* Decorative line */}
         <div className="w-32 h-px bg-white/50 mb-4"></div>
