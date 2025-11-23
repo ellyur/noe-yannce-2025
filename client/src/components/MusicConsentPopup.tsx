@@ -69,9 +69,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                   textShadow: '0 2px 10px rgba(0,0,0,0.3)',
                   letterSpacing: '0.2em'
                 }}
-              >
-                noe & yannce
-              </motion.p>
+              >Noe & Yannce</motion.p>
             </div>
 
             <motion.div
