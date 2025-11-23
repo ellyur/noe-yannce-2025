@@ -251,7 +251,7 @@ export default function ScrollTriggeredTimeline() {
                             <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag-1">#FiNOEllyltsOfficialWithYANNCE</p>
                         </div>
                         <div className="inline-block border-2 border-primary rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full ml-2">
-                            <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag-2">#aNOEtherChapterWothYANNCE</p>
+                            <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag-2">#aNOEchapterwithYANNCE</p>
                         </div>
                     </div>
                 </div>
