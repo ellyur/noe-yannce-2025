@@ -139,9 +139,14 @@ const DressCodeSection = () => {
             <h3 className="text-xl font-body font-medium text-foreground mb-4 text-center">
               Important Reminders
             </h3>
-            <p className="text-sm text-foreground text-center leading-relaxed">
-              In keeping with the formality of the event, we kindly ask that guests refrain from wearing jeans, denim, slippers or rubber shoes.
-            </p>
+            <div className="space-y-3">
+              <p className="text-sm text-foreground text-center leading-relaxed">
+                In keeping with the formality of the event, we kindly ask that guests refrain from wearing jeans, denim, slippers or rubber shoes.
+              </p>
+              <p className="text-sm text-foreground text-center leading-relaxed font-medium">
+                Please arrive on time. Guest arrival begins at 3:30 PM.
+              </p>
+            </div>
           </div>
         </motion.div>
 
