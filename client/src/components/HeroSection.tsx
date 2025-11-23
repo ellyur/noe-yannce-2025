@@ -118,11 +118,14 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         @media (max-width: 767px) {
           .getting-married-text {
             left: 50%;
-            top: 20%;
+            top: 15%;
             transform: translateX(-50%);
             text-align: center;
             font-size: 4rem;
-            line-height: 1.2;
+            line-height: 1.1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
           }
           
           .hero-section h1 {
