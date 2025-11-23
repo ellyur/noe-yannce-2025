@@ -2,6 +2,10 @@ import { motion } from 'framer-motion';
 
 const EntourageSection = () => {
   const entourageData = {
+    officiant: {
+      title: "Officiating Minister",
+      name: "Rev. Vicente Ibarra"
+    },
     parents: [
       { label: "Groom's Parents", names: ["Mrs. Novelita Velasco", "Mr. Herman Velasco (Deceased)"] },
       { label: "Bride's Parents", names: ["Mrs. Amelita Rima", "Ptr. Eugene Teves (Deceased)"] }
@@ -10,20 +14,24 @@ const EntourageSection = () => {
       title: "Principal Sponsors",
       soloMen: [
         "Mr. Ricardo Jimenez",
+        "Rev. Vicente Ibarra",
+        "Rev. Jackson Natividad",
+        "Hon. Percival Cabuhat",
         "PLTCOL. Romeo Llauderes",
         "PLTCOL. Jandale Sulit",
-        "Hon. Percival Cabuhat",
-        "Hon. Jowey Suazrez",
         "Hon. Gerry Gozar",
+        "Hon. Jowey Suarez",
         "Mr. Raul Blas"
       ],
       soloWomen: [
         "Mrs. Elena Jimenez",
-        "Mrs. Jocelyn Llaudres",
-        "Mrs. Julie Tolentino",
-        "Hon. Maricel Torres-Echevarria",
         "Mrs. Digna Ibarra",
-        "Ma. Theresa Adlawan",
+        "Hon. Maricel Torres-Echevarria",
+        "Mrs. Julie Tolentino",
+        "Mrs. Jocelyn Llaudres",
+        "Mrs. Girlie Lomuntad",
+        "Mrs. Ma. Theresa Adlawan",
+        "Mrs. Richilda delos Santos",
         "Hon. Emelita Blas"
       ]
     },
@@ -87,6 +95,23 @@ const EntourageSection = () => {
         >
           Entourage
         </motion.h2>
+
+        {/* Officiating Minister */}
+        <motion.div 
+          className="mb-8 md:mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 8.6 }}
+        >
+          <div className="text-center max-w-4xl mx-auto" data-testid="officiating-minister-section">
+            <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
+              {entourageData.officiant.title}
+            </h3>
+            <p className="text-xs md:text-base lg:text-lg font-telma text-foreground" data-testid="officiating-minister-name">
+              {entourageData.officiant.name}
+            </p>
+          </div>
+        </motion.div>
 
         {/* Parents */}
         <motion.div 
