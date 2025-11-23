@@ -35,20 +35,17 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
             className="flex flex-col items-center justify-center gap-8 px-4"
           >
             <div className="text-center space-y-6 max-w-2xl">
-              <motion.h1
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
-                className="text-white text-5xl md:text-6xl lg:text-7xl font-script italic leading-relaxed"
-                style={{ 
-                  textShadow: '0 2px 10px rgba(0,0,0,0.3)',
-                  letterSpacing: '0.05em'
-                }}
+                className="text-white text-xl md:text-2xl lg:text-3xl font-serif italic leading-relaxed"
+                style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
               >
-                We are
+                "When the time is right, I, the Lord, will make it happen."
                 <br />
-                <span className="text-6xl md:text-7xl lg:text-8xl">Getting Married</span>
-              </motion.h1>
+                <span className="text-lg md:text-xl lg:text-2xl">— Isaiah 60:22</span>
+              </motion.p>
 
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
