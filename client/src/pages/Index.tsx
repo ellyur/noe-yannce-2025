@@ -86,7 +86,6 @@ const Index = () => {
             alt="Venue Cover"
             delay={7.5}
           />
-          <DressCodeSection />
           <SimpleGiftSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/7b85c12e-3667-45f9-a62e-2f11100d4448_bkz9f0.jpg"
@@ -95,6 +94,7 @@ const Index = () => {
           />
           <RSVPSection />
           <EntourageSection />
+          <DressCodeSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/593a4f25-5c82-48af-b512-6535ba932e26_qtu8ei.jpg"
             alt="Entourage Cover"

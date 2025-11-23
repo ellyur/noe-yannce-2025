@@ -42,6 +42,9 @@ const DressCodeSection = () => {
           <h2 className="font-display font-light italic text-gold mb-8 text-[48px]" data-testid="text-dresscode-title">
             Attire Guide
           </h2>
+          <p className="text-lg text-foreground max-w-2xl mx-auto" data-testid="text-attire-description">
+            We would love to see our favorite people wear the attire respectively that matches the color below.
+          </p>
         </motion.div>
 
         {/* Modern Dress Code Grid */}
