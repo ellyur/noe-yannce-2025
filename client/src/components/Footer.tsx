@@ -1,4 +1,3 @@
-import { Heart, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -29,7 +28,11 @@ const Footer = () => {
           {/* Decorative Elements */}
           <div className="flex justify-center items-center space-x-4 py-6">
             <div className="w-16 h-px bg-border"></div>
-            <Heart className="w-6 h-6 text-primary animate-float" />
+            <img 
+              src="https://res.cloudinary.com/dhzisg93l/image/upload/v1763907085/image-removebg-preview_1_pqpuvj.png"
+              alt="Gift Icon"
+              className="w-6 h-6 animate-float"
+            />
             <div className="w-16 h-px bg-border"></div>
           </div>
 
@@ -44,16 +47,6 @@ const Footer = () => {
           <div className="max-w-2xl mx-auto">
             <p className="text-foreground leading-relaxed italic">
               We're grateful to have you as part of our story. You've made our journey more beautiful, and we can't wait to share our special day with you.
-            </p>
-          </div>
-
-          {/* Bottom Section */}
-          <div className="pt-8">
-            <p className="text-foreground text-sm">
-              With love and gratitude,
-            </p>
-            <p className="text-foreground" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
-              Noe & Yannce
             </p>
           </div>
 
