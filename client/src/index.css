@@ -246,7 +246,7 @@
   body {
     @apply text-foreground font-body;
     font-family: var(--font-body);
-    background: hsl(215, 20%, 97%);
+    background: transparent;
     position: relative;
     min-height: 100vh;
     margin: 0;
