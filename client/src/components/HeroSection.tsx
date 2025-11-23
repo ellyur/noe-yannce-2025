@@ -41,16 +41,14 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         ))}
       </div>
       
-      {/* "We are Getting Married" text at top left - slanted */}
+      {/* "We are Getting Married" text - centered on mobile, top left slanted on desktop */}
       <h2 
-        className="absolute top-8 left-8 md:top-12 md:left-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white italic leading-tight z-10"
+        className="absolute text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white italic leading-tight z-10 getting-married-text"
         data-testid="text-getting-married"
         style={{ 
           fontFamily: 'Brush Script MT, cursive',
           fontWeight: 400,
-          textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-          transform: 'rotate(-8deg)',
-          transformOrigin: 'top left'
+          textShadow: '0 2px 10px rgba(0,0,0,0.5)'
         }}
       >
         We are<br />Getting Married
@@ -116,10 +114,28 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           animation: float infinite ease-in-out;
         }
         
+        /* Mobile: centered above the date */
         @media (max-width: 767px) {
+          .getting-married-text {
+            left: 50%;
+            top: 15%;
+            transform: translateX(-50%);
+            text-align: center;
+          }
+          
           .hero-section h1 {
             font-size: 3rem !important;
             line-height: 1.1 !important;
+          }
+        }
+        
+        /* Desktop: top left with slant */
+        @media (min-width: 768px) {
+          .getting-married-text {
+            left: 3rem;
+            top: 3rem;
+            transform: rotate(-8deg);
+            transform-origin: top left;
           }
         }
       `}</style>
