@@ -41,20 +41,22 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         ))}
       </div>
       
+      {/* "We are Getting Married" text at top left - slanted */}
+      <h2 
+        className="absolute top-8 left-8 md:top-12 md:left-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white italic leading-tight z-10"
+        data-testid="text-getting-married"
+        style={{ 
+          fontFamily: 'Brush Script MT, cursive',
+          fontWeight: 400,
+          textShadow: '0 2px 10px rgba(0,0,0,0.5)',
+          transform: 'rotate(-8deg)',
+          transformOrigin: 'top left'
+        }}
+      >
+        We are<br />Getting Married
+      </h2>
+
       <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
-        {/* "We are Getting Married" text at top */}
-        <h2 
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white italic leading-tight mb-8"
-          data-testid="text-getting-married"
-          style={{ 
-            fontFamily: 'Brush Script MT, cursive',
-            fontWeight: 400,
-            textShadow: '0 2px 10px rgba(0,0,0,0.5)'
-          }}
-        >
-          We are<br />Getting Married
-        </h2>
-        
         {/* Decorative line */}
         <div className="w-32 h-px bg-white/50 mb-4"></div>
 
