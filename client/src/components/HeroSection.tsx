@@ -11,7 +11,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
 
   return (
     <section 
-      className="hero-section relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="hero-section relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6"
       style={{
         backgroundImage: `url(${heroBackgroundImage})`,
         backgroundSize: 'cover',
@@ -21,6 +21,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
     >
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
+      
       {/* Snowflakes */}
       <div className="absolute inset-0 z-5 pointer-events-none">
         {[...Array(15)].map((_, i) => (
@@ -39,57 +40,72 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           </div>
         ))}
       </div>
-      {/* "We are Getting Married" text - centered on mobile, top left slanted on desktop */}
-      <h2 
-        className="absolute text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white italic leading-tight z-10 getting-married-text mt-[81px] mb-[81px]"
-        data-testid="text-getting-married"
-        style={{ 
-          fontFamily: 'Brush Script MT, cursive',
-          fontWeight: 400,
-          textShadow: '0 2px 10px rgba(0,0,0,0.5)'
-        }}
-      >
-        We are<br />Getting Married
-      </h2>
-      <div className="relative z-10 flex flex-col items-center text-center px-6 gap-8">
+
+      {/* Main Content Container - Uses flex-col on mobile, absolute positioning on desktop */}
+      <div className="relative z-10 flex flex-col items-center text-center gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl">
+        {/* "We are Getting Married" text - in-flow on mobile, absolute on desktop */}
+        <h2 
+          className="text-3xl sm:text-4xl md:absolute md:left-12 md:top-12 md:text-6xl lg:text-7xl text-white italic leading-tight md:transform md:-rotate-8 md:origin-top-left"
+          data-testid="text-getting-married"
+          style={{ 
+            fontFamily: 'Brush Script MT, cursive',
+            fontWeight: 400,
+            textShadow: '0 2px 10px rgba(0,0,0,0.5)',
+            lineHeight: '1.2'
+          }}
+        >
+          We are<br />Getting Married
+        </h2>
+
         {/* Date */}
         <h1 
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-wider font-light"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-wider font-light"
           data-testid="text-main-date"
           style={{ 
             fontFamily: 'Satoshi, sans-serif', 
             fontWeight: 300,
-            letterSpacing: '0.2em'
+            letterSpacing: '0.2em',
+            lineHeight: '1.1'
           }}
         >12|18|25</h1>
 
         {/* Address */}
-        <div className="space-y-2 mt-8">
+        <div className="space-y-1 sm:space-y-2 mt-4 sm:mt-6 md:mt-8">
           <p 
-            className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide"
+            className="text-base sm:text-xl md:text-2xl lg:text-3xl text-white font-light tracking-wide px-2"
             data-testid="text-venue"
-            style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}
+            style={{ 
+              fontFamily: 'Satoshi, sans-serif', 
+              fontWeight: 300,
+              lineHeight: '1.3'
+            }}
           >
             Clubhouse & Multi-Purpose Function Hall
           </p>
           <p 
-            className="text-lg sm:text-xl md:text-2xl text-white font-light tracking-wide"
+            className="text-sm sm:text-lg md:text-xl lg:text-2xl text-white font-light tracking-wide"
             data-testid="text-location"
-            style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}
+            style={{ 
+              fontFamily: 'Satoshi, sans-serif', 
+              fontWeight: 300,
+              lineHeight: '1.3'
+            }}
           >
             Maguyam, Silang Cavite
           </p>
         </div>
       </div>
+
       {/* Scroll Down Arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="flex flex-col items-center justify-center space-y-2 text-center">
-          <span className="text-xs sm:text-sm text-foreground/60">Scroll down</span>
-          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-foreground/60 animate-bounce" viewBox="0 0 24 24">
+          <span className="text-xs sm:text-sm text-white/60">Scroll down</span>
+          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white/60 animate-bounce" viewBox="0 0 24 24">
             <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
           </svg>
         </div>
       </div>
+
       <style>{`
         .hero-section {
           min-height: 100vh !important;
@@ -106,31 +122,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         
         .snowflake {
           animation: float infinite ease-in-out;
-        }
-        
-        /* Mobile: centered above the date */
-        @media (max-width: 767px) {
-          .getting-married-text {
-            left: 50%;
-            top: 15%;
-            transform: translateX(-50%);
-            text-align: center;
-          }
-          
-          .hero-section h1 {
-            font-size: 3rem !important;
-            line-height: 1.1 !important;
-          }
-        }
-        
-        /* Desktop: top left with slant */
-        @media (min-width: 768px) {
-          .getting-married-text {
-            left: 3rem;
-            top: 3rem;
-            transform: rotate(-8deg);
-            transform-origin: top left;
-          }
         }
       `}</style>
     </section>
