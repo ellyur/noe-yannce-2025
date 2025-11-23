@@ -72,6 +72,8 @@ const Index = () => {
             src="https://res.cloudinary.com/dldegdz30/image/upload/v1763612133/PHOTO_OPS_3_eeseuv.png"
             alt="Noe & Yannce"
             delay={3.5}
+            quote="Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres."
+            quoteAttribution="1 Corinthians 13:4-8"
           />
           <PolaroidSection />
           <CountdownSection />
