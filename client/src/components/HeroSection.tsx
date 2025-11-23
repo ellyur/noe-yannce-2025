@@ -41,22 +41,22 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         ))}
       </div>
 
-      {/* Main Content Container - Uses flex-col on mobile, absolute positioning on desktop */}
-      <div className="relative z-10 flex flex-col items-center text-center gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl">
-        {/* "We are Getting Married" text - in-flow on mobile, absolute on desktop */}
-        <h2 
-          className="text-3xl sm:text-4xl md:absolute md:left-12 md:top-12 md:text-6xl lg:text-7xl text-white italic leading-tight md:transform md:-rotate-8 md:origin-top-left"
-          data-testid="text-getting-married"
-          style={{ 
-            fontFamily: 'Brush Script MT, cursive',
-            fontWeight: 400,
-            textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-            lineHeight: '1.2'
-          }}
-        >
-          We are<br />Getting Married
-        </h2>
+      {/* "We are Getting Married" text - positioned absolutely on desktop, relatively on mobile */}
+      <h2 
+        className="text-3xl sm:text-4xl text-white italic leading-tight z-10 md:absolute md:left-12 md:top-12 md:text-6xl lg:text-7xl md:transform md:-rotate-8 md:origin-top-left mb-8 sm:mb-12 md:mb-0"
+        data-testid="text-getting-married"
+        style={{ 
+          fontFamily: 'Brush Script MT, cursive',
+          fontWeight: 400,
+          textShadow: '0 2px 10px rgba(0,0,0,0.5)',
+          lineHeight: '1.2'
+        }}
+      >
+        We are<br />Getting Married
+      </h2>
 
+      {/* Main Content Container */}
+      <div className="relative z-10 flex flex-col items-center text-center gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl">
         {/* Date */}
         <h1 
           className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-wider font-light"
