@@ -43,7 +43,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       
       {/* "We are Getting Married" text - centered on mobile, top left slanted on desktop */}
       <h2 
-        className="absolute text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white italic leading-tight z-10 getting-married-text"
+        className="absolute md:text-6xl lg:text-7xl text-white italic leading-tight z-10 getting-married-text"
         data-testid="text-getting-married"
         style={{ 
           fontFamily: 'Brush Script MT, cursive',
@@ -118,14 +118,23 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         @media (max-width: 767px) {
           .getting-married-text {
             left: 50%;
-            top: 15%;
+            top: 20%;
             transform: translateX(-50%);
             text-align: center;
+            font-size: 4rem;
+            line-height: 1.2;
           }
           
           .hero-section h1 {
             font-size: 3rem !important;
             line-height: 1.1 !important;
+          }
+        }
+        
+        /* Small mobile: even larger text */
+        @media (max-width: 480px) {
+          .getting-married-text {
+            font-size: 3.5rem;
           }
         }
         
