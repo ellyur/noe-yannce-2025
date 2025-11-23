@@ -1,6 +1,5 @@
 
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
 
 const SimpleGiftSection = () => {
   return (
@@ -38,8 +37,12 @@ const SimpleGiftSection = () => {
         >
           <div className="bg-card/30 border border-border rounded-xl p-12 shadow-soft hover-elegant">
             {/* Icon */}
-            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-8">
-              <Heart className="w-10 h-10 text-primary" />
+            <div className="w-20 h-20 flex items-center justify-center mx-auto mb-8">
+              <img 
+                src="https://res.cloudinary.com/dhzisg93l/image/upload/v1763907085/image-removebg-preview_1_pqpuvj.png" 
+                alt="Gift Icon"
+                className="w-20 h-20 object-contain"
+              />
             </div>
 
             {/* Text */}

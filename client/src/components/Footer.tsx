@@ -24,9 +24,6 @@ const Footer = () => {
               <span className="text-primary mx-3">&</span>
               Yannce
             </h2>
-            <p className="text-foreground text-lg">
-              18 December 2025, Thursday • Silang, Cavite
-            </p>
           </div>
 
           {/* Decorative Elements */}
