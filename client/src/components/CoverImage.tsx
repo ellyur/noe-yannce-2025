@@ -22,14 +22,13 @@ const CoverImage = ({ src, alt, delay = 0, quote, quoteAttribution }: CoverImage
         alt={alt}
         className="w-full h-full object-cover"
       />
-      
       {quote && (
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: delay + 0.5 }}
-            className="text-center max-w-4xl"
+            className="text-center max-w-4xl text-[13px]"
           >
             <p 
               className="text-white text-lg md:text-xl lg:text-2xl font-serif italic leading-relaxed mb-4"
