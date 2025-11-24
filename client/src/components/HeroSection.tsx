@@ -77,8 +77,8 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-white px-2"
             data-testid="text-venue"
             style={{ 
-              fontFamily: 'var(--font-body)', 
-              fontWeight: 400,
+              fontFamily: 'Zodiak, serif', 
+              fontWeight: 700,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
             }}
@@ -89,8 +89,8 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-white"
             data-testid="text-location"
             style={{ 
-              fontFamily: 'var(--font-body)', 
-              fontWeight: 400,
+              fontFamily: 'Zodiak, serif', 
+              fontWeight: 700,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
             }}
@@ -101,8 +101,8 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             className="text-sm sm:text-base md:text-lg lg:text-xl text-white"
             data-testid="text-location-city"
             style={{ 
-              fontFamily: 'var(--font-body)', 
-              fontWeight: 400,
+              fontFamily: 'Zodiak, serif', 
+              fontWeight: 700,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
             }}
