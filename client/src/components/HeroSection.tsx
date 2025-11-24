@@ -48,8 +48,9 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight"
           data-testid="text-getting-married"
           style={{ 
-            fontFamily: 'Pencerio',
+            fontFamily: '"Pencerio", "Dancing Script", cursive',
             fontStyle: 'normal',
+            fontWeight: 400,
             textShadow: '0 2px 10px rgba(0,0,0,0.5)',
             lineHeight: '1.3'
           }}
@@ -62,7 +63,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           className="text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] text-white font-bold"
           data-testid="text-main-date"
           style={{ 
-            fontFamily: 'Pencerio', 
+            fontFamily: '"Pencerio", "Dancing Script", cursive', 
             fontWeight: 700,
             letterSpacing: '0.05em',
             lineHeight: '1',
@@ -76,7 +77,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-white italic px-2"
             data-testid="text-venue"
             style={{ 
-              fontFamily: 'Pencerio', 
+              fontFamily: '"Pencerio", "Dancing Script", cursive', 
               fontWeight: 400,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
@@ -88,7 +89,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-white italic"
             data-testid="text-location"
             style={{ 
-              fontFamily: 'Pencerio', 
+              fontFamily: '"Pencerio", "Dancing Script", cursive', 
               fontWeight: 400,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
@@ -100,7 +101,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             className="text-sm sm:text-base md:text-lg lg:text-xl text-white italic"
             data-testid="text-location-city"
             style={{ 
-              fontFamily: 'Pencerio', 
+              fontFamily: '"Pencerio", "Dancing Script", cursive', 
               fontWeight: 400,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
@@ -108,16 +109,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           >
             Silang Cavite
           </p>
-        </div>
-      </div>
-
-      {/* Scroll Down Arrow */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="flex flex-col items-center justify-center space-y-2 text-center">
-          <span className="text-xs sm:text-sm text-white/60">Scroll down</span>
-          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white/60 animate-bounce" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
-          </svg>
         </div>
       </div>
 
