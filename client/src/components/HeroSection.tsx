@@ -44,30 +44,30 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Main Content Container */}
       <div className="relative z-10 flex flex-col items-center text-center gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl">
         {/* "We are Getting Married" text */}
-        <h2 
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white italic leading-tight"
+        <div 
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white leading-tight"
           data-testid="text-getting-married"
           style={{ 
-            fontFamily: 'Brush Script MT, cursive',
+            fontFamily: 'Pencerio, cursive',
             fontWeight: 400,
             textShadow: '0 2px 10px rgba(0,0,0,0.5)',
             lineHeight: '1.2'
           }}
         >
           We are<br />Getting Married
-        </h2>
+        </div>
 
         {/* Date */}
-        <h1 
-          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white tracking-wider font-light"
+        <div 
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-wider"
           data-testid="text-main-date"
           style={{ 
-            fontFamily: 'Satoshi, sans-serif', 
-            fontWeight: 300,
+            fontFamily: 'Rosaline, sans-serif', 
+            fontWeight: 400,
             letterSpacing: '0.2em',
             lineHeight: '1.1'
           }}
-        >12|18|25</h1>
+        >12.18.25</div>
 
         {/* Address */}
         <div className="space-y-1 sm:space-y-2 mt-4 sm:mt-6 md:mt-8">
