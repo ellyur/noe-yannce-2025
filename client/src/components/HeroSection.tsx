@@ -47,13 +47,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         <span 
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight block"
           data-testid="text-getting-married"
-          style={{ 
-            fontFamily: '"Pencerio", "Dancing Script", cursive',
-            fontStyle: 'normal',
-            fontWeight: 400,
-            textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-            lineHeight: '1.3'
-          }}
         >
           We are<br />Getting Married
         </span>
@@ -115,6 +108,12 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       <style>{`
         .hero-section {
           min-height: 100vh !important;
+        }
+        
+        [data-testid="text-getting-married"] {
+          font-family: 'Pencerio', 'Dancing Script', cursive !important;
+          font-style: normal !important;
+          font-weight: 400 !important;
         }
         
         @keyframes float {
