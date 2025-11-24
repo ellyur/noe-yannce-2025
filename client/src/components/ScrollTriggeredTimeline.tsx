@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { Clock, Camera, Utensils, Music, Heart, Users, Wine, PartyPopper, Sparkles } from 'lucide-react';
+import qrCodeImage from '@assets/Untitled design_1763964141751.png';
 
 interface TimelineEvent {
     time: string;
@@ -262,12 +263,30 @@ export default function ScrollTriggeredTimeline() {
                     <p className="text-sm md:text-base text-muted-foreground mb-4">
                         Help us capture moments on our special day by using these hashtags
                     </p>
-                    <div className="space-y-3 max-w-full">
+                    <div className="space-y-3 max-w-full mb-8">
                         <div className="inline-block border-2 border-primary rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full">
                             <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag-1">#FiNOEllyltsOfficialWithYANNCE</p>
                         </div>
                         <div className="inline-block border-2 border-primary rounded-lg px-4 md:px-6 py-3 bg-[#ffffff] max-w-full ml-2">
                             <p className="text-primary text-sm sm:text-base md:text-lg break-all" style={{ fontFamily: 'Satoshi, sans-serif' }} data-testid="text-hashtag-2">#aNOEchapterwithYANNCE</p>
+                        </div>
+                    </div>
+                    
+                    {/* QR Code Section */}
+                    <div className="border-t border-primary/20 pt-6">
+                        <p className="text-sm md:text-base text-foreground mb-4 font-medium">
+                            Share Your Memories
+                        </p>
+                        <p className="text-xs md:text-sm text-muted-foreground mb-4">
+                            Scan the QR code below to upload the photos and videos you capture throughout our celebration. Your contributions will help us relive this special day for years to come.
+                        </p>
+                        <div className="flex justify-center">
+                            <img 
+                                src={qrCodeImage} 
+                                alt="Upload Photos QR Code"
+                                className="w-40 h-40 md:w-48 md:h-48 object-contain"
+                                data-testid="img-upload-qr-code"
+                            />
                         </div>
                     </div>
                 </div>
