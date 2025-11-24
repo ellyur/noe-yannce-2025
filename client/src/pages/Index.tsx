@@ -95,11 +95,6 @@ const Index = () => {
           <RSVPSection />
           <EntourageSection />
           <DressCodeSection />
-          <CoverImage
-            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/593a4f25-5c82-48af-b512-6535ba932e26_qtu8ei.jpg"
-            alt="Entourage Cover"
-            delay={10.5}
-          />
           <FAQSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648825/6623a334-1dbd-4c10-af62-d7718c9efad0_tc0zqg.jpg"
