@@ -63,7 +63,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           className="text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] text-white font-bold"
           data-testid="text-main-date"
           style={{ 
-            fontFamily: '"Pencerio", "Dancing Script", cursive', 
+            fontFamily: '"Zodiak", serif', 
             fontWeight: 700,
             letterSpacing: '0.05em',
             lineHeight: '1',
@@ -74,10 +74,10 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         {/* Address */}
         <div className="space-y-1 sm:space-y-2">
           <p 
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white italic px-2"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white px-2"
             data-testid="text-venue"
             style={{ 
-              fontFamily: '"Pencerio", "Dancing Script", cursive', 
+              fontFamily: 'var(--font-body)', 
               fontWeight: 400,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
@@ -86,10 +86,10 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             Mallorca Villas
           </p>
           <p 
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white italic"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white"
             data-testid="text-location"
             style={{ 
-              fontFamily: '"Pencerio", "Dancing Script", cursive', 
+              fontFamily: 'var(--font-body)', 
               fontWeight: 400,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
@@ -98,10 +98,10 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             Clubhouse & Multi-Purpose Function Hall
           </p>
           <p 
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-white italic"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-white"
             data-testid="text-location-city"
             style={{ 
-              fontFamily: '"Pencerio", "Dancing Script", cursive', 
+              fontFamily: 'var(--font-body)', 
               fontWeight: 400,
               lineHeight: '1.4',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)'
