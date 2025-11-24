@@ -43,21 +43,16 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
 
       {/* Main Content Container */}
       <div className="relative z-10 flex flex-col items-center text-center gap-6 sm:gap-8 md:gap-12 w-full max-w-4xl">
-        {/* "We are Getting Married" text */}
-        <p 
-          className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl" 
+        {/* "We are Getting Married" image */}
+        <img 
+          src="/attached_assets/image-removebg-preview (1)_1763962015051.png"
+          alt="We are Getting Married"
+          className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl"
           data-testid="text-getting-married"
           style={{
-            fontFamily: "'PencerioVariable', cursive",
-            fontWeight: 400,
-            fontStyle: 'normal',
-            lineHeight: '1.3',
-            letterSpacing: '0.02em',
-            textShadow: '0 2px 10px rgba(0,0,0,0.5)'
+            filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.5))'
           }}
-        >
-          We are<br />Getting Married
-        </p>
+        />
 
         {/* Date */}
         <div 
@@ -118,9 +113,6 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           min-height: 100vh !important;
         }
         
-        [data-testid="text-getting-married"] {
-          font-family: PencerioVariable, cursive !important;
-        }
         
         @keyframes float {
           0%, 100% {
