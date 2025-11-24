@@ -45,7 +45,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       <div className="relative z-10 flex flex-col items-center text-center gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl">
         {/* "We are Getting Married" text */}
         <div 
-          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white leading-tight"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight"
           data-testid="text-getting-married"
           style={{ 
             fontFamily: 'Pencerio',
@@ -59,10 +59,10 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
 
         {/* Date */}
         <div 
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-wider"
+          className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl text-white tracking-wider"
           data-testid="text-main-date"
           style={{ 
-            fontFamily: 'Rosaline, sans-serif', 
+            fontFamily: 'Rosaline', 
             fontWeight: 400,
             letterSpacing: '0.2em',
             lineHeight: '1.1'
