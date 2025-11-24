@@ -51,7 +51,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         <img 
           src={image_removebg_preview__4_}
           alt="We are Getting Married"
-          className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl"
+          className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl"
           data-testid="text-getting-married"
           style={{
             filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.5))'
