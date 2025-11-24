@@ -3,12 +3,14 @@ const belovedImage = 'https://res.cloudinary.com/dldegdz30/image/upload/v1763612
 const soulmatesImage = 'https://res.cloudinary.com/dldegdz30/image/upload/v1763612132/TANAY_tdlw14.png';
 const foreverImage = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648835/a21b69d5-4258-4ac3-896d-c0e4d9c4f362_dlotq3.jpg';
 const entourageCover = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/593a4f25-5c82-48af-b512-6535ba932e26_qtu8ei.jpg';
+const venueCover = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648835/2c92ea32-c6eb-4bca-9735-94d09029ea31_nzwmvr.jpg';
 
 const PolaroidSection = () => {
   const polaroids = [
     { src: soulmatesImage, alt: 'soulmates' },
     { src: foreverImage, alt: 'forever' },
     { src: belovedImage, alt: 'beloved' },
+    { src: venueCover, alt: 'venue moment' },
     { src: entourageCover, alt: 'special moment' }
   ];
 

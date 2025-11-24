@@ -81,11 +81,6 @@ const Index = () => {
           <StorySection />
           <ScrollTriggeredTimeline />
           <VenueSection />
-          <CoverImage
-            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648835/2c92ea32-c6eb-4bca-9735-94d09029ea31_nzwmvr.jpg"
-            alt="Venue Cover"
-            delay={7.5}
-          />
           <SimpleGiftSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/7b85c12e-3667-45f9-a62e-2f11100d4448_bkz9f0.jpg"
