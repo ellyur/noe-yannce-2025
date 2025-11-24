@@ -44,11 +44,20 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Main Content Container */}
       <div className="relative z-10 flex flex-col items-center text-center gap-6 sm:gap-8 md:gap-12 w-full max-w-4xl">
         {/* "We are Getting Married" text */}
-        <div className="wedding-script-text">
-          <p className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl" data-testid="text-getting-married">
-            We are<br />Getting Married
-          </p>
-        </div>
+        <p 
+          className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl" 
+          data-testid="text-getting-married"
+          style={{
+            fontFamily: "'PencerioVariable', cursive",
+            fontWeight: 400,
+            fontStyle: 'normal',
+            lineHeight: '1.3',
+            letterSpacing: '0.02em',
+            textShadow: '0 2px 10px rgba(0,0,0,0.5)'
+          }}
+        >
+          We are<br />Getting Married
+        </p>
 
         {/* Date */}
         <div 
@@ -109,16 +118,8 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           min-height: 100vh !important;
         }
         
-        .wedding-script-text {
-          text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-        }
-        
-        .wedding-script-text p {
-          font-family: 'Pencerio', cursive !important;
-          font-weight: 400 !important;
-          font-style: normal !important;
-          line-height: 1.3 !important;
-          letter-spacing: 0.02em !important;
+        [data-testid="text-getting-married"] {
+          font-family: PencerioVariable, cursive !important;
         }
         
         @keyframes float {
