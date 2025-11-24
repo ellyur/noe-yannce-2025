@@ -12,7 +12,7 @@ interface CoverImageProps {
 const CoverImage = ({ src, alt, delay = 0, quote, quoteAttribution }: CoverImageProps) => {
   return (
     <motion.section 
-      className="relative w-full min-h-[60vh]"
+      className="relative w-full min-h-[40vh]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay }}
