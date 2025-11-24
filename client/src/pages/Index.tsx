@@ -79,12 +79,12 @@ const Index = () => {
           <CountdownSection />
           <ImageLoop />
           <StorySection />
-          <ScrollTriggeredTimeline />
-          <VenueSection />
-          <SimpleGiftSection />
-          <RSVPSection />
           <EntourageSection />
           <DressCodeSection />
+          <VenueSection />
+          <ScrollTriggeredTimeline />
+          <RSVPSection />
+          <SimpleGiftSection />
           <CoverImage
             src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648825/6623a334-1dbd-4c10-af62-d7718c9efad0_tc0zqg.jpg"
             alt="FAQ Cover"
