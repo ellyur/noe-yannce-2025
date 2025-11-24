@@ -63,8 +63,8 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           className="text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] text-white font-bold"
           data-testid="text-main-date"
           style={{ 
-            fontFamily: 'Satoshi, sans-serif', 
-            fontWeight: 700,
+            fontFamily: 'Stardom, sans-serif', 
+            fontWeight: 400,
             letterSpacing: '0.05em',
             lineHeight: '1',
             textShadow: '0 4px 20px rgba(0,0,0,0.6)'
