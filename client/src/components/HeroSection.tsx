@@ -42,16 +42,16 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       </div>
 
       {/* Main Content Container */}
-      <div className="relative z-10 flex flex-col items-center text-center gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl">
+      <div className="relative z-10 flex flex-col items-center text-center gap-6 sm:gap-8 md:gap-12 w-full max-w-4xl">
         {/* "We are Getting Married" text */}
         <div 
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight"
           data-testid="text-getting-married"
           style={{ 
             fontFamily: 'Pencerio',
             fontStyle: 'normal',
             textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-            lineHeight: '1.2'
+            lineHeight: '1.3'
           }}
         >
           We are<br />Getting Married
@@ -59,39 +59,54 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
 
         {/* Date */}
         <div 
-          className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl text-white tracking-wider"
+          className="text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] text-white font-bold"
           data-testid="text-main-date"
           style={{ 
-            fontFamily: 'Rosaline', 
-            fontWeight: 400,
-            letterSpacing: '0.2em',
-            lineHeight: '1.1'
+            fontFamily: 'Pencerio', 
+            fontWeight: 700,
+            letterSpacing: '0.05em',
+            lineHeight: '1',
+            textShadow: '0 4px 20px rgba(0,0,0,0.6)'
           }}
         >12.18.25</div>
 
         {/* Address */}
-        <div className="space-y-1 sm:space-y-2 mt-4 sm:mt-6 md:mt-8">
+        <div className="space-y-1 sm:space-y-2">
           <p 
-            className="text-base sm:text-xl md:text-2xl lg:text-3xl text-white font-light tracking-wide px-2"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white italic px-2"
             data-testid="text-venue"
             style={{ 
-              fontFamily: 'Satoshi, sans-serif', 
-              fontWeight: 300,
-              lineHeight: '1.3'
+              fontFamily: 'Pencerio', 
+              fontWeight: 400,
+              lineHeight: '1.4',
+              textShadow: '0 2px 10px rgba(0,0,0,0.5)'
+            }}
+          >
+            Mallorca Villas
+          </p>
+          <p 
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white italic"
+            data-testid="text-location"
+            style={{ 
+              fontFamily: 'Pencerio', 
+              fontWeight: 400,
+              lineHeight: '1.4',
+              textShadow: '0 2px 10px rgba(0,0,0,0.5)'
             }}
           >
             Clubhouse & Multi-Purpose Function Hall
           </p>
           <p 
-            className="text-sm sm:text-lg md:text-xl lg:text-2xl text-white font-light tracking-wide"
-            data-testid="text-location"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-white italic"
+            data-testid="text-location-city"
             style={{ 
-              fontFamily: 'Satoshi, sans-serif', 
-              fontWeight: 300,
-              lineHeight: '1.3'
+              fontFamily: 'Pencerio', 
+              fontWeight: 400,
+              lineHeight: '1.4',
+              textShadow: '0 2px 10px rgba(0,0,0,0.5)'
             }}
           >
-            Maguyam, Silang Cavite
+            Silang Cavite
           </p>
         </div>
       </div>
