@@ -44,12 +44,11 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Main Content Container */}
       <div className="relative z-10 flex flex-col items-center text-center gap-6 sm:gap-8 md:gap-12 w-full max-w-4xl">
         {/* "We are Getting Married" text */}
-        <span 
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight block"
-          data-testid="text-getting-married"
-        >
-          We are<br />Getting Married
-        </span>
+        <div className="wedding-script-text">
+          <p className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl" data-testid="text-getting-married">
+            We are<br />Getting Married
+          </p>
+        </div>
 
         {/* Date */}
         <div 
@@ -110,10 +109,16 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           min-height: 100vh !important;
         }
         
-        [data-testid="text-getting-married"] {
-          font-family: 'Pencerio', 'Dancing Script', cursive !important;
-          font-style: normal !important;
+        .wedding-script-text {
+          text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .wedding-script-text p {
+          font-family: 'Pencerio', cursive !important;
           font-weight: 400 !important;
+          font-style: normal !important;
+          line-height: 1.3 !important;
+          letter-spacing: 0.02em !important;
         }
         
         @keyframes float {
