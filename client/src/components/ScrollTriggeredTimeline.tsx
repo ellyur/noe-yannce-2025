@@ -284,7 +284,7 @@ export default function ScrollTriggeredTimeline() {
                             <img 
                                 src={qrCodeImage} 
                                 alt="Upload Photos QR Code"
-                                className="w-40 h-40 md:w-48 md:h-48 object-contain"
+                                className="w-56 h-56 md:w-64 md:h-64 object-contain"
                                 data-testid="img-upload-qr-code"
                             />
                         </div>
