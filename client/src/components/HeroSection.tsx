@@ -48,8 +48,8 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white leading-tight"
           data-testid="text-getting-married"
           style={{ 
-            fontFamily: 'Pencerio, cursive',
-            fontWeight: 400,
+            fontFamily: 'Pencerio',
+            fontStyle: 'normal',
             textShadow: '0 2px 10px rgba(0,0,0,0.5)',
             lineHeight: '1.2'
           }}
