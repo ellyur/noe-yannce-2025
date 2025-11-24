@@ -82,20 +82,10 @@ const Index = () => {
           <ScrollTriggeredTimeline />
           <VenueSection />
           <SimpleGiftSection />
-          <CoverImage
-            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/7b85c12e-3667-45f9-a62e-2f11100d4448_bkz9f0.jpg"
-            alt="Dress Code Cover"
-            delay={9.5}
-          />
           <RSVPSection />
           <EntourageSection />
           <DressCodeSection />
           <FAQSection />
-          <CoverImage
-            src="https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648825/6623a334-1dbd-4c10-af62-d7718c9efad0_tc0zqg.jpg"
-            alt="FAQ Cover"
-            delay={12.5}
-          />
           <MemorableMomentsSection />
           <Footer />
         </main>

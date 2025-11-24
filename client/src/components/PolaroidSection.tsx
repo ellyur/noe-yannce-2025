@@ -4,6 +4,8 @@ const soulmatesImage = 'https://res.cloudinary.com/dldegdz30/image/upload/v17636
 const foreverImage = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648835/a21b69d5-4258-4ac3-896d-c0e4d9c4f362_dlotq3.jpg';
 const entourageCover = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/593a4f25-5c82-48af-b512-6535ba932e26_qtu8ei.jpg';
 const venueCover = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648835/2c92ea32-c6eb-4bca-9735-94d09029ea31_nzwmvr.jpg';
+const dressCodeCover = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648834/7b85c12e-3667-45f9-a62e-2f11100d4448_bkz9f0.jpg';
+const faqCover = 'https://res.cloudinary.com/dcay7rt5q/image/upload/v1763648825/6623a334-1dbd-4c10-af62-d7718c9efad0_tc0zqg.jpg';
 
 const PolaroidSection = () => {
   const polaroids = [
@@ -11,7 +13,9 @@ const PolaroidSection = () => {
     { src: foreverImage, alt: 'forever' },
     { src: belovedImage, alt: 'beloved' },
     { src: venueCover, alt: 'venue moment' },
-    { src: entourageCover, alt: 'special moment' }
+    { src: dressCodeCover, alt: 'dress code moment' },
+    { src: entourageCover, alt: 'special moment' },
+    { src: faqCover, alt: 'celebration moment' }
   ];
 
   return (
