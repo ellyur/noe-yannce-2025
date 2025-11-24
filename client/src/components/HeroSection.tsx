@@ -2,6 +2,8 @@ import { useAnimationContext } from '@/contexts/AnimationContext';
 
 import image_removebg_preview__1_ from "@assets/image-removebg-preview (1).png";
 
+import image_removebg_preview__3_ from "@assets/image-removebg-preview (3).png";
+
 interface HeroSectionProps {
   audioRef: React.RefObject<HTMLAudioElement>;
 }
@@ -45,7 +47,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       <div className="relative z-10 flex flex-col items-center text-center gap-6 sm:gap-8 md:gap-12 w-full max-w-4xl">
         {/* "We are Getting Married" image */}
         <img 
-          src={image_removebg_preview__1_}
+          src={image_removebg_preview__3_}
           alt="We are Getting Married"
           className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl"
           data-testid="text-getting-married"
